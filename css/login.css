@@ -21,6 +21,11 @@
     line-height: 20px;
 }
 
+.sign-up{
+    margin-top: 50px;
+    /* height: 100vh; */
+}
+
 .logo img{
     margin-bottom: 3px;
 }

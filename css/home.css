@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    font-family: 'CustomFont', metropolisregular;
+}
+
+/* .caro{
+    display: flex;
+    border: 5px solid greenyellow;
+    justify-content: space-around;
+}
+
+.caro .image{
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.caro-button{
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    margin: auto 20px;
+    border-radius: 100px;
+} */
+
+.container label{
+    font-size: 12px;
+    color: grey;
+}
+
+header{
+    width: 100%;
+    font-weight: bold;
+}
+
+header img{
+    margin-right: -10px;
+    margin-top: -5px;
+}
+
+.search {
+    width: 300px;
+    border-radius: 100px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.search::-webkit-input-placeholder { /* Edge */
+    font-size: smaller;
+  }
+
+.nav-content{
+    display: flex;
+    margin-top: 15px;
+}
+
+.filter #filter{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 1px;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.filter button img{
+    position: relative;
+    margin: auto -4px;
+}
+
+.trolly{
+    margin: auto 50px;
+}
+.auth{
+    display: flex;
+    justify-content: space-around;
+}
+
+.auth .butn, .butn2{
+    border-radius: 100px;
+    margin: 15px;
+    width: 100px;
+    height: 36px;
+}
+
+.auth .butn{
+    background-color: #DB3022;
+    border: none;
+}
+
+.auth .butn:hover{
+    background-color: #b4291c;
+}
+
+.auth .butn2{
+    border: 1px solid rgba(43, 41, 41, 0.363);
+}
+
+.auth .butn2:hover{
+    background-color: #DB3022;
+    color: white;
+}
+
+.price{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+.shop{
+    font-size: 12px;
+    color:  #9B9B9B;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards .card{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.cards .card .rating{
+    color: #FFBA49;
+}
+
+.card{
+    width: 200px;
+}
+
+#h2{
+    margin-bottom: -10px;
+}
+
+
+.category .item img{
+    border-radius: 10px;
+    width: 238px;
+}
+
+.caro-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caro-item #img-item{
+    position: absolute;
+    width: 116px;
+    margin-top: 53px;
+    margin-left: 53px;
+}
+
+a{
+    text-decoration: none;
+}
+.category button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    top: 110px;
+    /* border: 1px solid rgba(0, 0, 0, 0.274); */
+    border: none;
+}
+
+.category #prev-button{
+    left: -25px;
+    opacity: 100;
+}
+
+.category #next-button{
+    right: -25px;
+    overflow-wrap: 100;
+}
+
+.card-content{
+    margin-top: 60px;
+}
+
+.color-item{
+    width: 350px;
+}
+
+/* Black */
+.color-black {
+    background-color: black;
+    border-radius: 100px;
+    width: 36px;
+    height: 36px;
+}
+
+.btn-check:active+.color-black, .btn-check:checked+.color-black, .color-black.active, .color-black.dropdown-toggle.show, .color-black:active {
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+/* White */
+.color-white {
+    background-color: white;
+    border-radius: 100px;
+    width: 36px;
+    height: 36px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.btn-check:active+.color-white, .btn-check:checked+.color-white, .color-white.active, .color-white.dropdown-toggle.show, .color-white:active {
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+/* Red */
+.color-red {
+    background-color: red;
+    border-radius: 100px;
+    width: 36px;
+    height: 36px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.btn-check:active+.color-red, .btn-check:checked+.color-red, .color-red.active, .color-red.dropdown-toggle.show, .color-red:active {
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+.mbody{
+    padding: 3px 3px 3px 26px;
+}
+
+.color:hover{
+    border: 5px solid greenyellow;
+}
+
+.size label{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0px 16px 0px 0px;
+}
+
+.category label{
+    display: inline-block;
+    width: 100px;
+    margin: 5px 22px 5px 0px;
+}
+
+#brand{
+    border: none;
+    margin-left: -12px;
+    margin-top: -16px;
+}
+
+.brand-opt{
+    width: 450px;
+    color: grey;
+}
+
+.modal-foot button{
+    border-radius: 100px;
+    border: none;
+    width: 160px;
+    height: 36px;
+    margin: 0px 0px 30px 0px;
+}
+
+.modal-foot #button-discard{
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 75px;
+}
+
+.modal-foot #button-discard:hover{
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply{
+    background-color: red;
+}
+
+.modal-foot #button-apply:hover{
+    background-color: rgb(196, 0, 0);
+}
+
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('../fonts/metropolis.regular-webfont.woff2') format('woff2'), url('../fonts/metropolis.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.label-item {
+    color: rgb(255, 0, 0);
+    border-color: rgba(108, 117, 125, .5)
+}
+
+.label-item:hover {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:focus+.label-item, .label-item:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.384)
+}
+
+.btn-check:active+.label-item, .btn-check:checked+.label-item, .label-item.active, .label-item.dropdown-toggle.show, .label-item:active {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:active+.label-item:focus, .btn-check:checked+.label-item:focus, .label-item.active:focus, .label-item.dropdown-toggle.show:focus, .label-item:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .5)
+}
+/* Small devices (landscape phones, 576px and up) */
+/* jika media tersebut lebih dari atau sama dengan 576px, pakai css yang ini */
+@media (min-width: 576px) { 
+    .search {
+        width: 507px;
+        border-radius: 100px;
+        margin-top: 2px;
+        margin-left: 20px;
+    }
+
+    .card{
+        width: 238px;
+    }
+ }
