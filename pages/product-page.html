@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="./img/favicon.png" type="image/gif" sizes="16x14">
-    <link rel="stylesheet" href="./css/home.css">
-    <title>Home - Tuku</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x14">
+    <title>Product - Tuku</title>
 </head>
 
 <body>
-    <!-- header -->
     <header class="shadow">
         <!-- Navbar -->
         <nav class="navbar navbar-light bg-light" style="width: 100%;">
@@ -145,133 +145,211 @@
             </div>
         </nav>
     </header>
-    <!-- carousel -->
-    <!-- <div class="Tuku-carousel text-center">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="caro">
-                        <div class="image">
-                            <img src="../img/caro-item-1.jpg" alt="">
-                        </div>
-                        <div class="image">
-                            <img src="../img/caro-item-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="caro">
-                        <div class="image">
-                            <img src="../img/caro-item-1.jpg" alt="">
-                        </div>
-                        <div class="image">
-                            <img src="../img/caro-item-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="caro">
-                        <div class="image">
-                            <img src="../img/caro-item-1.jpg" alt="">
-                        </div>
-                        <div class="image">
-                            <img src="../img/caro-item-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="caro-button carousel-control-prev" style="color: black; opacity: 100;" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                <
-            </button>
-            <button class="caro-button carousel-control-next" style="color: black; opacity: 100;" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                >
-            </button>
-        </div>
-    </div> -->
+
+    <!-- breadcumb  -->
+
     <div class="container mt-5">
-        <!-- Category -->
-        <!-- <h2 id="h2"><b>Category</b></h2>
-        <label for="">What are you currently looking for</label>
-        <div class="category">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="caro-item">
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/category-item/c-tshirt.jpg" alt="">
-                                </a>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+                <li class="breadcrumb-item active" aria-current="page"><b>T-Shirt</b></li>
+            </ol>
+        </nav>
+
+        <!-- product  -->
+        <div class="row">
+            <div class="col-md-4 images-product">
+                <div class="row image-product-main">
+                    <img src="https://placeimg.com/378/378/any" alt="">
+                </div>
+                <div class="row images-product-small">
+                    <div class="gallery">
+                        <div class="item-gallery">
+                            <img src="https://placeimg.com/65/65/any" alt="">
+                        </div>
+                        <div class="item-gallery">
+                            <img src="https://placeimg.com/65/65/any" alt="">
+                        </div>
+                        <div class="item-gallery">
+                            <img src="https://placeimg.com/65/65/any" alt="">
+                        </div>
+                        <div class="item-gallery">
+                            <img src="https://placeimg.com/65/65/any" alt="">
+                        </div>
+                        <div class="item-gallery">
+                            <img src="https://placeimg.com/65/65/any" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 data-product">
+                <div class="row product-tittle">
+                    <span class="title">Baju muslim pria</span>
+                    <span class="shop">Zalora cloth</span>
+                    <span class="rate-star">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <label for="" style="color: grey; font-size: small;">(10)</label>
+                    </span>
+                </div>
+                <div class="row product-price">
+                    <label for=""><b>Price</b></label>
+                    <label for=""
+                        style="font-weight: bold; font-size: 30px; color: black; display: inline-block; margin-top: -20px;">$
+                        20.0</label>
+                </div>
+                <div class="row product-color">
+                    <b>Color</b>
+                    <div class="color-bg">
+
+                    </div>
+                </div>
+                <div class="row product-size">
+
+                </div>
+                <div class="row product-button">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" id="button-chat-add" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Chat</button>
                             </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/category-item/c-short.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/category-item/c-jacket.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/category-item/c-pants.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/category-item/c-shoes.jpg" alt="">
-                                </a>
+                            <div class="col">
+                                <button type="button" id="button-chat-add" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Add</button>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <div class="caro-item">
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/bg/bg-blue.jpg" alt="">
-                                </a>
+                    <div class="col">
+                        <button type="button" id="button-buy" class="btn btn-secondary" data-bs-dismiss="modal">Buy
+                            now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- description product -->
+        <div class="product-desc-wrapper">
+            <h3>Informasi Produk</h3>
+            <br>
+            <h4>Condition</h4>
+            <p style="color: red;">New</p>
+            <br><br>
+            <h4><b>Description</b></h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, et!</p>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi eius qui, repellendus iste alias sed
+                fugiat unde dolor voluptas commodi cum nisi. Officiis ullam, natus eaque numquam cumque rerum repellat
+                labore eius eligendi, exercitationem modi omnis, nam corrupti laboriosam placeat veniam neque accusamus
+                magni id rem perferendis dolore nihil doloribus porro. Porro accusamus itaque ipsum hic incidunt quas
+                debitis suscipit explicabo, modi asperiores blanditiis minima deserunt. Consequatur nihil excepturi
+                atque esse fugit accusantium. Molestias alias odio impedit nesciunt sit nulla maiores, nam placeat
+                voluptas inventore omnis ab! Illum, voluptatum quaerat eius ducimus doloremque ipsum sequi labore veniam
+                aperiam assumenda.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ab. Molestiae, magnam perferendis
+                recusandae reiciendis vel ex pariatur laudantium numquam delectus quae, ut est velit aut ratione ab
+                explicabo in?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, molestiae?</p>
+            <br>
+            <h4><b>Product review</b></h4>
+            <div class="product-review-wrapper">
+                <div class="row">
+                    <div class="col">
+                        <label for="">
+                            <p class="num-rate"><b>5.0</b>/10</p>
+                        </label>
+                        <p>
+                            <i class="fa fa-star checked star-rate-item"></i>
+                            <i class="fa fa-star checked star-rate-item"></i>
+                            <i class="fa fa-star checked star-rate-item"></i>
+                            <i class="fa fa-star checked star-rate-item"></i>
+                            <i class="fa fa-star checked star-rate-item"></i>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="row rate-item">
+                            <div class="rating-item">
+                                <i class="fa fa-star checked star-rate-item"></i>
                             </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/bg/bg-red.jpg" alt="">
-                                </a>
+                            <div class="rating-item">
+                                5
                             </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/bg/bg-cyan.jpg" alt="">
-                                </a>
+                            <div class="rating-item">
+                                <div class="bar"></div>
                             </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/bg/bg-pink.jpg" alt="">
-                                </a>
+                            <div class="rating-item">
+                                <div class="" style="margin-left: 90px;">4</div>
                             </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="../img/bg/bg-orange.jpg" alt="">
-                                </a>
+                        </div>
+                        <div class="row rate-item">
+                            <div class="rating-item">
+                                <i class="fa fa-star checked star-rate-item"></i>
+                            </div>
+                            <div class="rating-item">
+                                4
+                            </div>
+                            <div class="rating-item">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="rating-item">
+                                <div class="" style="margin-left: 90px;">0</div>
+                            </div>
+                        </div>
+                        <div class="row rate-item">
+                            <div class="rating-item">
+                                <i class="fa fa-star checked star-rate-item"></i>
+                            </div>
+                            <div class="rating-item">
+                                3
+                            </div>
+                            <div class="rating-item">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="rating-item">
+                                <div class="" style="margin-left: 90px;">0</div>
+                            </div>
+                        </div>
+                        <div class="row rate-item">
+                            <div class="rating-item">
+                                <i class="fa fa-star checked star-rate-item"></i>
+                            </div>
+                            <div class="rating-item">
+                                2
+                            </div>
+                            <div class="rating-item">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="rating-item">
+                                <div class="" style="margin-left: 90px;">0</div>
+                            </div>
+                        </div>
+                        <div class="row rate-item">
+                            <div class="rating-item">
+                                <i class="fa fa-star checked star-rate-item"></i>
+                            </div>
+                            <div class="rating-item">
+                                1
+                            </div>
+                            <div class="rating-item">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="rating-item">
+                                <div class="" style="margin-left: 90px;">0</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="shadow-lg carousel-control" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev" style="background-color: white;" id="prev-button">
-                    <img src="../img/icon/caro-prev.png" alt="">
-                </button>
-                <button class="shadow-lg carousel-control" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next" style="background-color: white;" id="next-button">
-                    <img src="../img/icon/caro-next.png" alt="">
-                </button>
             </div>
-        </div> -->
+        </div>
+
         <!-- card -->
-        <div class="card-content">
+        <div class="card-content mt-5">
             <h2 id="h2"><b>New</b></h2>
             <label for="">You’ve never seen it before!</label>
 
@@ -505,12 +583,18 @@
         </div>
     </div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../js/script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

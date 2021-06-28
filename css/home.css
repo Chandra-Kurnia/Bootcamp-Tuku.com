@@ -39,10 +39,10 @@ header img{
 }
 
 .search {
-    width: 300px;
+    width: 198px;
     border-radius: 100px;
     margin-top: 2px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .search::-webkit-input-placeholder { /* Edge */
@@ -55,10 +55,11 @@ header img{
 }
 
 .filter #filter{
+    width: 10px;
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.205);
+    border: 1px solid grey;
     border-radius: 1px;
-    margin-left: 15px;
+    margin-left: 11px;
     width: 40px;
     height: 40px;
     border-radius: 15px;
@@ -71,8 +72,13 @@ header img{
 }
 
 .trolly{
-    margin: auto 50px;
+    margin: auto 12px;
+    order: 1;
+    border: 1px solid grey;
+    padding: 6px;
+    border-radius: 30%;
 }
+
 .auth{
     display: flex;
     justify-content: space-around;
@@ -80,14 +86,15 @@ header img{
 
 .auth .butn, .butn2{
     border-radius: 100px;
-    margin: 15px;
-    width: 100px;
+    margin: 5px;
+    width: 93px;
     height: 36px;
 }
 
 .auth .butn{
     background-color: #DB3022;
     border: none;
+    margin-left: 88px;
 }
 
 .auth .butn:hover{
@@ -130,7 +137,7 @@ header img{
 }
 
 .card{
-    width: 200px;
+    width: 160px;
 }
 
 #h2{
@@ -158,6 +165,7 @@ header img{
 a{
     text-decoration: none;
 }
+
 .category button{
     width: 50px;
     height: 50px;
@@ -272,7 +280,7 @@ a{
     background-color: white;
     color: black;
     border: 1px solid red;
-    margin-left: 75px;
+    margin-left: 5px;
 }
 
 .modal-foot #button-discard:hover{
@@ -282,17 +290,11 @@ a{
 
 .modal-foot #button-apply{
     background-color: red;
+    margin-left: -5px;
 }
 
 .modal-foot #button-apply:hover{
     background-color: rgb(196, 0, 0);
-}
-
-@font-face {
-    font-family: 'metropolisregular';
-    src: url('../fonts/metropolis.regular-webfont.woff2') format('woff2'), url('../fonts/metropolis.regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 .label-item {
@@ -332,4 +334,37 @@ a{
     .card{
         width: 238px;
     }
+
+    .trolly{
+        margin: auto 50px;
+        order: 0;
+        border: none;
+    }
+
+    .auth .butn, .butn2{
+        border-radius: 100px;
+        margin: 15px;
+        width: 100px;
+        height: 36px;
+    }
+
+    .auth .butn{
+        background-color: #DB3022;
+        border: none;
+    }
+
+    .modal-foot #button-discard{
+        background-color: white;
+        color: black;
+        border: 1px solid red;
+        margin-left: 75px;
+    }
+    
  }
+
+ @font-face {
+    font-family: 'metropolisregular';
+    src: url('../fonts/metropolis.regular-webfont.woff2') format('woff2'), url('../fonts/metropolis.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
