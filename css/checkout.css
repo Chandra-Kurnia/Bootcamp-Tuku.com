@@ -75,7 +75,7 @@
 
 .tittle-items{
     margin: 2px auto;
-    height: 64px;
+    height: 200px;
     position: relative;
     font-size: smaller;
 }
@@ -116,8 +116,7 @@
 }
 
 .count{
-    margin-left: 45px;
-    margin-right: auto;
+    margin-left: 14px;
 }
 
 .image-product img{
@@ -125,6 +124,10 @@
 }
 
 .tittle{
+    margin-right: auto;
+}
+
+.count{
     margin-right: auto;
 }
 
@@ -234,10 +237,8 @@
 }
 
 /* Media query */
-
-
-/* desktop */
-@media (min-width: 576px){
+/* Phone */
+@media (min-width: 576px) {
     .search{
         width: 700px;
         display: flex;
@@ -294,7 +295,7 @@
 
     .right{
         width: 30%;
-        height: 180px;
+        height: 280px;
         background-color: white;
         box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.589);
         margin-bottom: 0px;
@@ -302,7 +303,7 @@
 
     .tittle-items{
         /* background-color: red; */
-        height: 64px;
+        height: 250px;
         position: relative;
         font-size: medium;
     }
@@ -343,37 +344,72 @@
         display: none;
     }
 
-    .count{
-        margin-left: 14px;
-        margin-right: auto;
+    .another-address{
+        background-color: white;
+        border-radius: 20px;
+        color: grey;
+        font-size: smaller;
+        width: 200px;
+        height: 36px;
+        border: 1px solid grey;
+    }
+    
+    .another-address:hover{
+        border: none;
+        background-color: red;
+        color: white;
     }
 
-}
-
-/* Tablet */
-@media(min-width: 576px) and (max-width: 1024px) {
-    .items{
-        height: 150px;
+    .add-address{
+        background-color: white;
+        border: 3px dashed rgb(180, 180, 180);
+        height: 50px;
+        padding-top: 10px;
+        border-radius: 5px;
     }
 
-    .count{
-        margin-left: 45px;
+    .add-address button{
+        background-color: white;
+        border: none;
+        color: grey;
     }
 
-    .right{
+    .current-address{
+        padding: 20px;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+    .current-address button{
+        background-color: white;
+        color: red;
+        border: none;
+        font-weight: bold;
         margin-left: -5px;
-        padding-left: 0;
-        padding-right: 20px;
-        width: 250px;
     }
 
-    .btn-buy{
-        width: 210px;
+    .modal-body .container .row input{
+        height: 48px;
     }
 
-    .label-item{
-        display: block;
+    .modal-body .container .row{
+        color: grey;
+        font-size: small;
+        text-align: left;
+        font-weight: normal;
     }
+
+    .btn-save-address{
+        border-radius: 20px;
+        font-size: smaller;
+        width: 200px;
+        height: 36px;
+    }
+    
+    .btn-save-address:hover{
+        background-color: rgb(201, 24, 24);
+        color: white;
+    }
+
 }
 
 @font-face {

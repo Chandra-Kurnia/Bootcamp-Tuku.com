@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../css/home.css"> -->
+    <title>Tuku | Checkout</title>
+    <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x14">
+</head>
+
+<body>
+    <header>
+        <nav class="shadow navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-nav container">
+                <!-- navbar brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo-login.svg" alt="" width="30" height="24">
+                    <b>Tuku</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="search">
+                    <div class="input-group mb-3">
+                        <input type="text" class="search form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="filter">
+                        <button class="btn" data-bs-toggle="modal" id="filter" data-bs-target="#exampleModal">
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="nav-item-right">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <label class="label-item">Cart</label>
+                                </a>
+                            </li>
+                            <br>
+                            <li class="nav-item">
+                                <a href="">
+                                    <i class="far fa-bell"></i>
+                                    <label class="label-item">Notification</label>
+                                </a>
+                            </li>
+                            <br>
+                            <li class="nav-item">
+                                <a href="">
+                                    <i class="far fa-envelope"></i>
+                                    <label class="label-item">Message</label>
+                                </a>
+                            </li>
+                            <br>
+                            <li class="profile-circle nav-item">
+                                <a href="">
+                                    <img class="rounded-circle image-profile" src="../img/Profile.png" alt="">
+                                    <label class="label-item">Profile</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2>
+            <b>Checkout</b>
+        </h2>
+        <div class="row">
+            <div class="col-8 left">
+                <b>
+                    Shipping Addres
+                </b>
+                <div class="tittle-items">
+                    <div class="form-check check-items">
+                        <p>Andreas jane</p>
+                        <p>Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa Tengah,
+                            53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="another-address" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Chose another address
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel" style="margin-left: auto;">
+                                            <b>Chose another address</b>
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="add-address text-center">
+
+
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    Add new address
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered"
+                                                        style="max-width: 1000px;">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel"
+                                                                    style="margin-left: auto;">
+                                                                    <b>Add new address</b>
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <p>
+                                                                            Save address as (ex : home address, office
+                                                                            address)
+                                                                        </p>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Username"
+                                                                                aria-label="Username"
+                                                                                aria-describedby="addon-wrapping">
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            Recipient’s name
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Username"
+                                                                                    aria-label="Username"
+                                                                                    aria-describedby="addon-wrapping">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            Recipient's telephone number
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Username"
+                                                                                    aria-label="Username"
+                                                                                    aria-describedby="addon-wrapping">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            Address
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Username"
+                                                                                    aria-label="Username"
+                                                                                    aria-describedby="addon-wrapping">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            Postal code
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Username"
+                                                                                    aria-label="Username"
+                                                                                    aria-describedby="addon-wrapping">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            City or Subdistrict
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Username"
+                                                                                    aria-label="Username"
+                                                                                    aria-describedby="addon-wrapping">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <br>
+                                                                <div class="form-check" style="margin-left: 25px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckChecked" checked>
+                                                                    <p
+                                                                        style="text-align: left; font-weight: normal; color: grey;">
+                                                                        Make it primary address</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn another-address"
+                                                                    style="border: 1px solid grey;"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-save-address"
+                                                                    style="background-color: #DB3022; color: white;">Save
+                                                                    changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <br>
+                                            <div class="current-address">
+                                                <p style="font-size: large;"><b>Address Jane</b> </p>
+                                                <p style="font-weight: normal; font-size: small;">Perumahan Sapphire
+                                                    Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa
+                                                    Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas,
+                                                    53181</p>
+                                                <button>Change address</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="cek">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="margin-right: 23px;">
+                    </div>
+                    <div class="image-product"> <img src="../img/jas.png" alt=""> </div>
+                    <div class="tittle">
+                        <div class="row tittle-product">Men's formal suit - Black</div>
+                        <div class="row shop-product">Zalora Cloth</div>
+                    </div>
+                    <div class="count">
+                        <div class="row">
+                            <div class="col">
+                                <button class="rounded-circle minus"><b>-</b></button>
+                            </div>
+                            <div class="col">1</div>
+                            <div class="col">
+                                <button class="rounded-circle plus"><b>+</b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price"><b>$20.0</b></div>
+                </div>
+                <div class="items">
+                    <div class="cek">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="margin-right: 23px;">
+                    </div>
+                    <div class="image-product"> <img src="../img/jacket.png" alt=""> </div>
+                    <div class="tittle">
+                        <div class="row tittle-product">Men's formal suit - Black</div>
+                        <div class="row shop-product">Zalora Cloth</div>
+                    </div>
+                    <div class="count">
+                        <div class="row">
+                            <div class="col">
+                                <button class="rounded-circle minus"><b>-</b></button>
+                            </div>
+                            <div class="col">1</div>
+                            <div class="col">
+                                <button class="rounded-circle plus"><b>+</b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price"><b>$20.0</b></div>
+                </div>
+            </div>
+            <div class="col-4 right">
+                <div class="container mt-3">
+                    <b>
+                        Shopping summary
+                    </b>
+                    <div class="row mt-4">
+                        <div class="col" style="color: grey;"><b> Order</b></div>
+                        <div class="col-2"><b>$40.0</b></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col" style="color: grey;"><b>Delivery</b></div>
+                        <div class="col-2"><b>$5.0</b></div>
+                    </div>
+                    <hr class="hr" style="width: 340px;">
+                    <div class="row mt-2">
+                        <div class="col"><b>Shopping summary</b></div>
+                        <div class="col-2" style="color: red;"><b>$45.0</b></div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn text-center mt-4 btn-buy" data-bs-toggle="modal"
+                        data-bs-target="#static">
+                        Buy
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="max-width: 450px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="">
+                                        <button type="button" class="btn-close" style="margin-left: 0px;"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <b
+                                            style="display: inline-block; padding-left: 5px; padding-bottom: 5px;">Payment</b>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <b>
+                                        Payment method
+                                    </b>
+                                    <br>
+                                    <div class="row mt-4" style="margin-bottom: 45px;">
+                                        <div class="col-3">
+                                            <img src="../img/payment/gopay.png" alt="">
+                                        </div>
+                                        <div class="col"><b>Gopay</b></div>
+                                        <div class="col-2">
+                                            <div class="cek">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" style="margin-right: 23px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-3">
+                                            <img src="../img/payment/pos.png" alt="">
+                                        </div>
+                                        <div class="col"><b>Pos Indonesia</b> </div>
+                                        <div class="col-2">
+                                            <div class="cek">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" style="margin-right: 23px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-3">
+                                            <img src="../img/payment/mastercard.png" alt="">
+                                        </div>
+                                        <div class="col"><b>Mastercard</b> </div>
+                                        <div class="col-2">
+                                            <div class="cek">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" style="margin-right: 23px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr style="width: 450px; background-color: grey; margin-left: -20px;">
+                                    <p style="display: inline-block;">
+                                        <b>Shopping summary</b>
+                                        <br>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col" style="color: grey; font-weight: bold;">Order</div>
+                                        <div class="col" style="text-align: right; font-weight: bold; color: black;">
+                                            $40.0</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col" style="color: grey; font-weight: bold;">Delivery</div>
+                                        <div class="col" style="text-align: right; font-weight: bold; color: black;">
+                                            $5.0</div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="margin-top: 200px;">
+                                    <div class="row">
+                                        <div class="col" style="text-align: left; margin-left: -200px;">
+                                            <b>Shopping summary</b>
+                                            <br>
+                                            <b style="color: red; font-weight: bold;">$ 45.0</b>
+                                        </div>
+                                        <div class="col mt-2">
+                                            <button type="button" class="btn btn-save-address"
+                                                style="background-color: red; color: white;">buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

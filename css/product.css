@@ -300,9 +300,6 @@ header img{
 }
 
 /* data product  */
-.data-product{
-    /* background-color: blue; */
-}
 .product-tittle, .product-price, .product-color, .product-size, .product-button{
     width: 100%;
     height: 20%;
@@ -350,9 +347,6 @@ header img{
 
 
 /* button  */
-.product-button{
-    /* background-color: goldenrod; */
-}
 
 .product-button button{
     border-radius: 100px;
