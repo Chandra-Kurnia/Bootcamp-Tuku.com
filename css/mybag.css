@@ -16,17 +16,134 @@
     padding-left: 25px;
 }
 
+.nav-content{
+    display: flex;
+    margin-top: 15px;
+}
+
 .filter #filter{
-    /* background-color: white; */
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    margin-left: 15px;
+    width: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 1px;
+    margin-left: 11px;
     width: 40px;
     height: 40px;
     border-radius: 15px;
     margin-top: 3px;
-    background-image: url('../img/icon/nav-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.filter button img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    margin: auto -4px;
+}
+
+/* Modal */
+
+.mbody{
+    padding: 3px 3px 3px 26px;
+}
+
+.color-item{
+    width: 350px;
+}
+
+/* Color Picker */
+.color-black, .color-white, .color-red, .color-grey, .color-yellow, .color-blue{
+    border-radius: 100px;
+    border: 4px solid white;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+/* Black */
+.color-black {
+    background-color: black;
+}
+
+#black:checked ~ .color-black{
+    outline: 2px solid red;
+    /* -webkit-outline-radius: 50%; */
+}
+
+/* white */
+.color-white {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+#white:checked ~ .color-white{
+    outline: 2px solid red;
+}
+
+/* red */
+.color-red {
+    background-color: red;
+}
+
+#red:checked ~ .color-red{
+    outline: 2px solid red;
+}
+
+/* grey */
+.color-grey {
+    background-color: grey;
+}
+
+#grey:checked ~ .color-grey{
+    outline: 2px solid red;
+}
+
+/* yellow */
+.color-yellow {
+    background-color: yellow;
+}
+
+#yellow:checked ~ .color-yellow{
+    outline: 2px solid red;
+}
+
+/* blue */
+.color-blue {
+    background-color: blue;
+}
+
+#blue:checked ~ .color-blue{
+    outline: 2px solid red;
+}
+
+/* End Color Picker */
+
+.modal-foot button{
+    border-radius: 100px;
+    border: none;
+    width: 160px;
+    height: 36px;
+    margin: 0px 0px 30px 0px;
+}
+
+.modal-foot #button-discard{
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.modal-foot #button-discard:hover{
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply{
+    background-color: red;
+    margin-left: -5px;
+}
+
+.modal-foot #button-apply:hover{
+    background-color: rgb(196, 0, 0);
 }
 
 .container-nav{
@@ -47,8 +164,14 @@
     padding-bottom: 8px;
 }
 
+.nav-item{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .nav-item a i{
     color: grey;
+
 }
 
 .nav-item a i:hover{
@@ -89,6 +212,10 @@
     flex-wrap: wrap;
 }
 
+.items .tittle{
+    font-size: small;
+}
+
 /* item product */
 
 /* checkbox */
@@ -102,6 +229,81 @@
 .form-check-input:checked {
     background-color: red;
 }
+
+.size label{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0px 16px 0px 0px;
+}
+
+.label-item {
+    color: rgb(255, 0, 0);
+    border-color: rgba(108, 117, 125, .5)
+}
+
+.label-item:hover {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:focus+.label-item, .label-item:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.384)
+}
+
+.btn-check:active+.label-item, .btn-check:checked+.label-item, .label-item.active, .label-item.dropdown-toggle.show, .label-item:active {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:active+.label-item:focus, .btn-check:checked+.label-item:focus, .label-item.active:focus, .label-item.dropdown-toggle.show:focus, .label-item:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .5)
+}
+
+/* Filter Category */
+
+.category button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    top: 110px;
+    /* border: 1px solid rgba(0, 0, 0, 0.274); */
+    border: none;
+}
+
+.category #prev-button{
+    left: -25px;
+    opacity: 100;
+}
+
+.category #next-button{
+    right: -25px;
+    overflow-wrap: 100;
+}
+
+.category label{
+    display: inline-block;
+    width: 100px;
+    margin: 5px 22px 5px 0px;
+}
+
+/* Brand */
+#brand{
+    border: none;
+    margin-left: -12px;
+    margin-top: -16px;
+}
+
+.brand-opt{
+    width: 450px;
+    color: grey;
+}
+
+/* Filter button */
 
 .cek, .image-product, .tittle, .count, .price{
     margin: auto 0px;
@@ -237,7 +439,7 @@
 
 
 /* desktop */
-@media (min-width: 576px){
+@media (min-width: 768px){
     .search{
         width: 700px;
         display: flex;
@@ -348,10 +550,14 @@
         margin-right: auto;
     }
 
+    .modal-foot #button-discard{
+        margin-left: 70px;
+    }
+
 }
 
 /* Tablet */
-@media(min-width: 576px) and (max-width: 1024px) {
+@media(min-width: 768px) and (max-width: 1024px) {
     .items{
         height: 150px;
     }
