@@ -1,17 +1,18 @@
 /* Navbar */
-.search{
+
+.search {
     width: 558px;
     display: flex;
     /* padding-left: 60px; */
 }
 
-.search input{
+.search input {
     height: 40px;
     border-radius: 100px;
     padding-left: 25px;
 }
 
-.filter #filter{
+.filter #filter {
     /* background-color: white; */
     border: 1px solid rgba(0, 0, 0, 0.205);
     margin-left: 15px;
@@ -24,104 +25,451 @@
     background-position: center;
 }
 
-.container-nav{
+.filter button img {
+    width: 20px;
+    height: 30px;
+    position: relative;
+    margin: auto -4px;
+}
+
+/* Modal */
+
+.mbody {
+    padding: 3px 3px 3px 26px;
+}
+
+.color-item {
+    width: 350px;
+}
+
+/* Color Picker */
+
+.color-black, .color-white, .color-red, .color-grey, .color-yellow, .color-blue {
+    border-radius: 100px;
+    border: 4px solid white;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+/* Black */
+
+.color-black {
+    background-color: black;
+}
+
+#black:checked~.color-black {
+    outline: 2px solid red;
+    /* -webkit-outline-radius: 50%; */
+}
+
+/* white */
+
+.color-white {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+#white:checked~.color-white {
+    outline: 2px solid red;
+}
+
+/* red */
+
+.color-red {
+    background-color: red;
+}
+
+#red:checked~.color-red {
+    outline: 2px solid red;
+}
+
+/* grey */
+
+.color-grey {
+    background-color: grey;
+}
+
+#grey:checked~.color-grey {
+    outline: 2px solid red;
+}
+
+/* yellow */
+
+.color-yellow {
+    background-color: yellow;
+}
+
+#yellow:checked~.color-yellow {
+    outline: 2px solid red;
+}
+
+/* blue */
+
+.color-blue {
+    background-color: blue;
+}
+
+#blue:checked~.color-blue {
+    outline: 2px solid red;
+}
+
+/* End Color Picker */
+
+.modal-foot button {
+    border-radius: 100px;
+    border: none;
+    width: 160px;
+    height: 36px;
+    margin: 0px 0px 30px 0px;
+}
+
+.modal-foot #button-discard {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.modal-foot #button-discard:hover {
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply {
+    background-color: red;
+    margin-left: -5px;
+}
+
+.modal-foot #button-apply:hover {
+    background-color: rgb(196, 0, 0);
+}
+
+/* Filter Category */
+
+.category button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    top: 110px;
+    /* border: 1px solid rgba(0, 0, 0, 0.274); */
+    border: none;
+}
+
+.category #prev-button {
+    left: -25px;
+    opacity: 100;
+}
+
+.category #next-button {
+    right: -25px;
+    overflow-wrap: 100;
+}
+
+.category label {
+    display: inline-block;
+    width: 100px;
+    margin: 5px 22px 5px 0px;
+}
+
+/* Brand */
+
+#brand {
+    border: none;
+    margin-left: -12px;
+    margin-top: -16px;
+}
+
+.brand-opt {
+    width: 450px;
+    color: grey;
+}
+
+.modal-foot #button-discard {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.modal-foot #button-discard:hover {
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply {
+    background-color: red;
+    margin-left: -5px;
+}
+
+.modal-foot #button-apply:hover {
+    background-color: rgb(196, 0, 0);
+}
+
+.size label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0px 16px 0px 0px;
+}
+
+.container-nav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.container-nav .navbar-brand{
+.container-nav .navbar-brand {
     text-decoration: none;
     color: #DB3022;
     display: inline-block;
     /* padding-bottom: 20px; */
 }
 
-.container-nav img{
+.container-nav img {
     width: 31px;
     height: 44px;
     padding-bottom: 8px;
 }
 
-.nav-item a i{
+.nav-item a i {
     color: grey;
 }
 
-.nav-item a i:hover{
+.nav-item a i:hover {
     color: red;
 }
 
-.profile-circle img{
+.profile-circle img {
     /* border-radius: 50%; */
     width: 16px;
     height: 16px;
 }
 
+/* Filter */
+
+/* End Filter */
+
 /* Sidebar */
-.sidebar{
-    padding-top: 160px;
-    padding-left: 100px;
-    padding-right: 5px;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-color: grey;
+
+.sidebar {
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 
-.sidebar-content img{
-    width: 70px;
+.side {
+    width: 25%;
+    height: 100vh;
+    padding-top: 150px;
+    padding-left: 100px;
+    /* background-color: red; */
+    transition: all 300ms ease-in-out;
+    display: flex;
+}
+
+/* Sidebar Profile */
+
+.sidebar .profile img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
-.sidebar-content{
-    
+.sidebar .edit {
+    color: grey;
+    font-size: 15px;
 }
 
+.sidebar .side .edit img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Action */
+
+.action {
+    padding-top: 80px;
+}
+
+.action ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.action ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sub user */
+
+.sub-user, .sub-loc, .sub-clipboard {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-user {
+    background-color: #456BF3;
+}
+
+.sub-loc {
+    background-color: #F36F45;
+}
+
+.sub-clipboard {
+    background-color: #F3456F;
+}
+
+.sub-user img, .sub-loc img, .sub-clipboard img {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+/* End action */
+
+/* End Sidebar */
+
+/* Content */
+
+.content-wrapper {
+    padding-top: 150px;
+    width: 75%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    transition: all 300ms ease-in-out;
+}
+
+.content {
+    background-color: white;
+    width: 100%;
+    height: 550px;
+    border: 2px solid #9B9B9B;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.content h3 {
+    font-weight: bold;
+}
+
+.content span {
+    color: grey;
+    font-weight: 20px;
+    font-weight: bold;
+}
+
+/* Profile detail */
+
+.profile-left, .profile-right {
+    height: 200px;
+}
+
+/* Input */
+
+.profile-left .form-label {
+    text-align: right;
+    margin: auto;
+    color: #9B9B9B;
+}
+
+.form-control {
+    width: 450px;
+    height: 48px;
+}
+
+.form-select {
+    width: 120px;
+}
+
+.btn-save-profile {
+    width: 100px;
+    background-color: #DB3022;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-save-profile:hover {
+    color: white;
+    background-color: #9e291f;
+}
+
+.profile-left{
+    border-right: 1px solid grey;
+}
+
+.profile-right{
+    padding-left: 120px;
+}
+
+/* End Content */
+
+#sidebar-toggle {
+    display: none;
+}
+
+#sidebar-toggle:checked~.side {
+    margin-left: -380px;
+}
+
+#sidebar-toggle:checked~.content-wrapper {
+    width: 100%;
+}
 
 @media (min-width: 576px) {
-    .search{
+    .search {
         width: 700px;
         display: flex;
         padding-left: 60px;
     }
-
-    .container-nav a{
+    .container-nav a {
         text-decoration: none;
         color: #DB3022;
         display: inline-block;
         padding-bottom: 20px;
     }
-    
-    .container-nav{
+    .container-nav {
         padding-top: 15px;
         padding-bottom: 5px;
         position: relative;
     }
-
-    .nav-item-right{
+    .nav-item-right {
         /* background-color: red; */
         height: 40px;
         position: absolute;
         right: 0;
     }
-
-    .nav-item-right li{
+    .nav-item-right li {
         margin-right: 10px;
         margin-left: 20px;
     }
-
-    .label-item{
+    .label-item {
         display: none;
     }
-
-    .profile-circle{
+    .profile-circle {
         width: 50px;
         height: 50px;
     }
-    
-    .profile-circle img{
+    .profile-circle img {
         width: 30px;
         height: 40px;
     }
+}
 
+html, body {
+    margin: 0;
+    font-family: 'CustomFont', metropolisregular;
+}
+
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('../fonts/metropolis.regular-webfont.woff2') format('woff2'), url('../fonts/metropolis.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

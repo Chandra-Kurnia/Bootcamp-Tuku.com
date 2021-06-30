@@ -39,6 +39,102 @@
                     <div class="filter">
                         <button class="btn" data-bs-toggle="modal" id="filter" data-bs-target="#exampleModal">
                         </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="shadow-sm modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close" style="position: absolute; left: 3;"></button>
+                                        <h5 class="modal-title" id="exampleModalLabel" style="margin-left: 40px;">Filter
+                                        </h5>
+                                    </div>
+                                    <!-- <div class="modal-body">
+                                    </div> -->
+                                    <div class="mbody filter-color">
+                                        <p><b>Colors</b></p>
+                                        <div class="color-item">
+                                            <input type="checkbox" class="btn-check" id="black" autocomplete="off">
+                                            <label class="btn color-black" for="black"></label>
+                                            <input type="checkbox" class="btn-check" id="white" autocomplete="off">
+                                            <label class="btn color-white" for="white"></label>
+                                            <input type="checkbox" class="btn-check" id="red" autocomplete="off">
+                                            <label class="btn color-red" for="red"></label>
+                                            <input type="checkbox" class="btn-check" id="grey" autocomplete="off">
+                                            <label class="btn color-grey" for="grey"></label>
+                                            <input type="checkbox" class="btn-check" id="yellow" autocomplete="off">
+                                            <label class="btn color-yellow" for="yellow"></label>
+                                            <input type="checkbox" class="btn-check" id="blue" autocomplete="off">
+                                            <label class="btn color-blue" for="blue"></label>
+                                        </div>
+                                    </div>
+                                    <hr
+                                        style="border: 3px solid rgba(163, 163, 163, 0.226); color: rgba(163, 163, 163, 0.226);">
+                                    <div class="mbody">
+                                        <p><b>Sizes</b></p>
+                                        <div class="size">
+                                            <input type="checkbox" class="btn-check" id="XS" autocomplete="off">
+                                            <label class="btn label-item" for="XS">XS</label>
+                                            <input type="checkbox" class="btn-check" id="S" autocomplete="off">
+                                            <label class="btn label-item" for="S">S</label>
+                                            <input type="checkbox" class="btn-check" id="M" autocomplete="off">
+                                            <label class="btn label-item" for="M">M</label>
+                                            <input type="checkbox" class="btn-check" id="L" autocomplete="off">
+                                            <label class="btn label-item" for="L">L</label>
+                                            <input type="checkbox" class="btn-check" id="XL" autocomplete="off">
+                                            <label class="btn label-item" for="XL">XL</label>
+                                        </div>
+                                    </div>
+                                    <hr
+                                        style="border: 3px solid rgba(163, 163, 163, 0.226); color: rgba(163, 163, 163, 0.226); margin-bottom: -3px;">
+                                    <div class="mbody">
+                                        <p><b>Category</b></p>
+                                        <div class="category">
+                                            <input type="checkbox" class="btn-check" id="all" autocomplete="off">
+                                            <label class="btn label-item" id="lbl-category" for="all">All</label>
+                                            <input type="checkbox" class="btn-check" id="women" autocomplete="off">
+                                            <label class="btn label-item" id="lbl-category" for="women">Women</label>
+                                            <input type="checkbox" class="btn-check" id="men" autocomplete="off">
+                                            <label class="btn label-item" id="lbl-category" for="men">Men</label>
+                                            <input type="checkbox" class="btn-check" id="boys" autocomplete="off">
+                                            <label class="btn label-item" id="lbl-category" for="boys">Boys</label>
+                                            <input type="checkbox" class="btn-check" id="girls" autocomplete="off">
+                                            <label class="btn label-item" id="lbl-category" for="girls">Girls</label>
+                                        </div>
+                                    </div>
+                                    <hr
+                                        style="border: 3px solid rgba(163, 163, 163, 0.226); color: rgba(163, 163, 163, 0.226); margin-bottom: -3px;">
+                                    <div class="mbody">
+                                        <p><b>Brand</b></p>
+                                        <div class="input-group mb-3">
+                                            <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                                            <div class="brand-opt">
+                                                <select class="form-select" id="brand">
+                                                    <option selected>adidas Originals, Jack & Jones, s.Oliver</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="modal-footer">
+                                    </div> -->
+                                    <div class="modal-foot">
+                                        <div class="row">
+                                            <div class="col-6"><button type="button" id="button-discard"
+                                                    class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button type="button" id="button-apply"
+                                                    class="btn btn-primary">Aplly</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -67,8 +163,10 @@
                             <br>
                             <li class="profile-circle nav-item">
                                 <a href="">
-                                    <img class="rounded-circle image-profile" src="../img/Profile.png" alt="">
-                                    <label class="label-item">Profile</label>
+                                    <label for="sidebar-toggle">
+                                        <img class="rounded-circle image-profile" src="../img/Profile.png" alt="">
+                                        <label class="label-item">Profile</label>
+                                    </label>
                                 </a>
                             </li>
                         </ul>
@@ -78,18 +176,163 @@
         </nav>
     </header>
 
-    <div class="content">
-        <div class="col-3">
-            <div class="sidebar">
-                <div class="sidebar-content">
-                    <div class="row">
-                        
+    <div class="sidebar">
+        <input type="checkbox" name="" id="sidebar-toggle">
+        <div class="side flex-column">
+            <div class="profile d-flex flex-row">
+                <img src="../img/Profile.jpg" alt="">
+                <div class="profile-name ps-4">
+                    <div class="name fw-bold">Johanes Mikael</div>
+                    <div class="edit">
+                        <img src="../img/pencil.png" alt="">
+                        Ubah Profile
                     </div>
                 </div>
             </div>
+            <div class="action">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="sub-user rounded-circle">
+                                <img src="../img/user.png" alt="">
+                            </div>
+                            <div class="sub-usr-text">
+                                My Account
+                            </div>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="">
+                            <div class="sub-loc rounded-circle">
+                                <img src="../img/loc.png" alt="">
+                            </div>
+                            <div class="sub-usr-text">
+                                Shipping address
+                            </div>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="">
+                            <div class="sub-user rounded-circle">
+                                <img src="../img/clipboard.png" alt="">
+                            </div>
+                            <div class="sub-usr-text">
+                                My Order
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-9">
-
+        <div class="content-wrapper ps-3 pe-3">
+            <div class="content container">
+                <h3>
+                    My Profile
+                </h3>
+                <span>Manage your profile information</span>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col-8 profile-left pt-3">
+                        <div class="row">
+                            <div class="col-3 form-label">
+                                Name
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" name="" id="" value="Johanes Mikael">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 form-label">
+                                Email
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" name="" id="" value="Johanes@gmail.com">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 form-label">
+                                Phone number
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" name="" id="" value="08901289012">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 form-label">
+                                Gender
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <input type="radio" name="gender" id="male">
+                                        <label for="male">
+                                            Laki - Laki
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="radio" name="gender" id="female">
+                                        <label for="female">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 form-label">
+                                Date of birth
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <select name="" id="" class="form-select">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select name="" id="" class="form-select">
+                                            <option value="">Januari</option>
+                                            <option value="">February</option>
+                                            <option value="">Maret</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select name="" id="" class="form-select">
+                                            <option value="">2001</option>
+                                            <option value="">2002</option>
+                                            <option value="">2003</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-3 form-label">
+                                
+                            </div>
+                            <div class="col-9">
+                                <button class="btn btn-save-profile">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 profile-right">
+                        <img src="../img/profile.jpg" class="rounded-circle" alt="">
+                        <br>
+                        <button class="btn btn-outline-secondary mt-3 rounded-pill">Select Image</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
