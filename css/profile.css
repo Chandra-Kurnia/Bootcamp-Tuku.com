@@ -1,7 +1,7 @@
 /* Navbar */
 
 .search {
-    width: 558px;
+    width: 400px;
     display: flex;
     /* padding-left: 60px; */
 }
@@ -259,13 +259,7 @@
 }
 
 .side {
-    width: 25%;
-    height: 100vh;
-    padding-top: 150px;
-    padding-left: 100px;
-    /* background-color: red; */
-    transition: all 300ms ease-in-out;
-    display: flex;
+    display: none;
 }
 
 /* Sidebar Profile */
@@ -340,7 +334,8 @@
 
 .content-wrapper {
     padding-top: 150px;
-    width: 75%;
+    margin-left: 0px;
+    width: 100%;
     height: 100vh;
     background-color: #F5F5F5;
     transition: all 300ms ease-in-out;
@@ -349,7 +344,7 @@
 .content {
     background-color: white;
     width: 100%;
-    height: 550px;
+    height: 130vh;
     border: 2px solid #9B9B9B;
     border-radius: 5px;
     padding-top: 20px;
@@ -380,16 +375,19 @@
 }
 
 .form-control {
-    width: 450px;
+    width: 250px;
     height: 48px;
+    margin-left: 10px;
 }
 
 .form-select {
-    width: 120px;
+    width: 250px;
+    margin-bottom: 10px;
 }
 
 .btn-save-profile {
-    width: 100px;
+    width: 250px;
+    margin-left: 8px;
     background-color: #DB3022;
     color: white;
     border-radius: 20px;
@@ -401,11 +399,28 @@
 }
 
 .profile-left{
-    border-right: 1px solid grey;
+    order: 1;
 }
 
 .profile-right{
     padding-left: 120px;
+}
+
+.button-select-image{
+    margin-left: -5px;
+    width: 125px;
+}
+
+.radio-gender{
+    padding-left: 26px;
+}
+
+.select-content{
+    padding-left: 20px;
+}
+
+.side-mobile{
+    display: normal;
 }
 
 /* End Content */
@@ -459,6 +474,66 @@
     .profile-circle img {
         width: 30px;
         height: 40px;
+    }
+
+    .content {
+        background-color: white;
+        width: 100%;
+        height: 550px;
+        border: 2px solid #9B9B9B;
+        border-radius: 5px;
+        padding-top: 20px;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+        padding-top: 150px;
+        width: 75%;
+        height: 100vh;
+        background-color: #F5F5F5;
+        transition: all 300ms ease-in-out;
+    }
+
+    .form-control {
+        width: 450px;
+        height: 48px;
+        margin-left: 0px;
+    }
+
+    .profile-left{
+        border-right: 1px solid grey;
+        order: 0;
+    }
+
+    .radio-gender{
+        padding-left: 12px;
+    }
+
+    .select-content{
+        padding-left: 10px;
+    }
+
+    .form-select {
+        width: 120px;
+    }
+
+    .btn-save-profile {
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .side-mobile{
+        display: none;
+    }
+
+    .side {
+        width: 25%;
+        height: 100vh;
+        padding-top: 150px;
+        padding-left: 100px;
+        /* background-color: red; */
+        transition: all 300ms ease-in-out;
+        display: flex;
     }
 }
 

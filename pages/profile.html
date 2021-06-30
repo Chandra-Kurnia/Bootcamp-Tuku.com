@@ -22,7 +22,7 @@
         <nav class="shadow navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-nav container">
                 <!-- navbar brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../img/logo-login.svg" alt="" width="30" height="24">
                     <b>Tuku</b>
                 </a>
@@ -141,7 +141,7 @@
                     <div class="nav-item-right">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="">
+                                <a href="./myBag.html">
                                     <i class="fas fa-shopping-cart"></i>
                                     <label class="label-item">Cart</label>
                                 </a>
@@ -215,7 +215,7 @@
                     <br>
                     <li>
                         <a href="">
-                            <div class="sub-user rounded-circle">
+                            <div class="sub-clipboard rounded-circle">
                                 <img src="../img/clipboard.png" alt="">
                             </div>
                             <div class="sub-usr-text">
@@ -227,6 +227,23 @@
             </div>
         </div>
         <div class="content-wrapper ps-3 pe-3">
+            <div class="row text-center side-mobile">
+                <div class="col sub-user ms-3 rounded-3 mb-2">
+                    <a href="#">
+                        <img src="../img/user.png" alt="">
+                    </a>
+                </div>
+                <div class="col sub-loc ms-3 rounded-3">
+                    <a href="./checkout.html">
+                        <img src="../img/loc.png" alt="">
+                    </a>
+                </div>
+                <div class="col sub-clipboard ms-3 rounded-3">
+                    <a href="./myBag.html">
+                        <img src="../img/clipboard.png" alt="">
+                    </a>
+                </div>
+            </div>
             <div class="content container">
                 <h3>
                     My Profile
@@ -234,7 +251,7 @@
                 <span>Manage your profile information</span>
                 <br>
                 <hr>
-                <div class="row">
+                <div class="row d-flex">
                     <div class="col-8 profile-left pt-3">
                         <div class="row">
                             <div class="col-3 form-label">
@@ -267,7 +284,7 @@
                             <div class="col-3 form-label">
                                 Gender
                             </div>
-                            <div class="col-9">
+                            <div class="col-9 radio-gender">
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <input type="radio" name="gender" id="male">
@@ -289,7 +306,7 @@
                             <div class="col-3 form-label">
                                 Date of birth
                             </div>
-                            <div class="col-9">
+                            <div class="col-9 select-content">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <select name="" id="" class="form-select">
@@ -329,7 +346,7 @@
                     <div class="col-4 profile-right">
                         <img src="../img/profile.jpg" class="rounded-circle" alt="">
                         <br>
-                        <button class="btn btn-outline-secondary mt-3 rounded-pill">Select Image</button>
+                        <button class="btn btn-outline-secondary mt-3 rounded-pill button-select-image">Select Image</button>
                     </div>
                 </div>
             </div>
