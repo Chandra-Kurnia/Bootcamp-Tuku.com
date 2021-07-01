@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Navbar.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Navbar -->
+  <header class="shadow">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light" style="width: 100%;">
+      <div class="container">
+        <div class="nav-content">
+          <a class="navbar-brand" href="#" style="text-decoration: none;color: #DB3022;">
+            <img src="../img/logo-login.svg" alt="" width="30" height="24">
+            Tuku
+          </a>
+          <div class="search">
+            <div class="input-group mb-3">
+              <input type="text" class="search form-control" placeholder="Search" aria-label="Search"
+                aria-describedby="basic-addon1">
+              <button class="btn rounded-start rounded-pill"
+                style="background-color: white; border-top: 1px solid #d3d8de;border-right: 1px solid #d3d8de; border-bottom: 1px solid #d3d8de; margin-top: 2px;">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="filter">
+            <button class="btn" data-bs-toggle="modal" id="filter" data-bs-target="#exampleModal">
+              <img src="../img/icon/nav-icon.png" alt="">
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="shadow-sm modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                      style="position: absolute; left: 3;"></button>
+                    <h5 class="modal-title" id="exampleModalLabel" style="margin-left: 40px;">Filter
+                    </h5>
+                  </div>
+                  <!-- <div class="modal-body">
+                                  </div> -->
+                  <div class="mbody filter-color">
+                    <p><b>Colors</b></p>
+                    <div class="color-item">
+                      <input type="checkbox" class="btn-check" id="black" autocomplete="off">
+                      <label class="btn color-black" for="black"></label>
+                      <input type="checkbox" class="btn-check" id="white" autocomplete="off">
+                      <label class="btn color-white" for="white"></label>
+                      <input type="checkbox" class="btn-check" id="red" autocomplete="off">
+                      <label class="btn color-red" for="red"></label>
+                      <input type="checkbox" class="btn-check" id="grey" autocomplete="off">
+                      <label class="btn color-grey" for="grey"></label>
+                      <input type="checkbox" class="btn-check" id="yellow" autocomplete="off">
+                      <label class="btn color-yellow" for="yellow"></label>
+                      <input type="checkbox" class="btn-check" id="blue" autocomplete="off">
+                      <label class="btn color-blue" for="blue"></label>
+                    </div>
+                  </div>
+                  <hr style="border: 3px solid rgba(163, 163, 163, 0.226); color: rgba(163, 163, 163, 0.226);">
+                  <div class="mbody">
+                    <p><b>Sizes</b></p>
+                    <div class="size">
+                      <input type="checkbox" class="btn-check" id="XS" autocomplete="off">
+                      <label class="btn label-item" for="XS">XS</label>
+                      <input type="checkbox" class="btn-check" id="S" autocomplete="off">
+                      <label class="btn label-item" for="S">S</label>
+                      <input type="checkbox" class="btn-check" id="M" autocomplete="off">
+                      <label class="btn label-item" for="M">M</label>
+                      <input type="checkbox" class="btn-check" id="L" autocomplete="off">
+                      <label class="btn label-item" for="L">L</label>
+                      <input type="checkbox" class="btn-check" id="XL" autocomplete="off">
+                      <label class="btn label-item" for="XL">XL</label>
+                    </div>
+                  </div>
+                  <hr
+                    style="border: 3px solid rgba(163, 163, 163, 0.226); color: rgba(163, 163, 163, 0.226); margin-bottom: -3px;">
+                  <div class="mbody">
+                    <p><b>Category</b></p>
+                    <div class="category">
+                      <input type="checkbox" class="btn-check" id="all" autocomplete="off">
+                      <label class="btn label-item" id="lbl-category" for="all">All</label>
+                      <input type="checkbox" class="btn-check" id="women" autocomplete="off">
+                      <label class="btn label-item" id="lbl-category" for="women">Women</label>
+                      <input type="checkbox" class="btn-check" id="men" autocomplete="off">
+                      <label class="btn label-item" id="lbl-category" for="men">Men</label>
+                      <input type="checkbox" class="btn-check" id="boys" autocomplete="off">
+                      <label class="btn label-item" id="lbl-category" for="boys">Boys</label>
+                      <input type="checkbox" class="btn-check" id="girls" autocomplete="off">
+                      <label class="btn label-item" id="lbl-category" for="girls">Girls</label>
+                    </div>
+                  </div>
+                  <hr
+                    style="border: 3px solid rgba(163, 163, 163, 0.226); color: rgba(163, 163, 163, 0.226); margin-bottom: -3px;">
+                  <div class="mbody">
+                    <p><b>Brand</b></p>
+                    <div class="input-group mb-3">
+                      <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                      <div class="brand-opt">
+                        <select class="form-select brand" id="">
+                          <option selected>adidas Originals, Jack & Jones, s.Oliver</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="modal-footer">
+                                  </div> -->
+                  <div class="modal-foot">
+                    <div class="row">
+                      <div class="col-6"><button type="button" id="button-discard" class="btn btn-secondary"
+                          data-bs-dismiss="modal">Close</button>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" id="button-apply" class="btn btn-primary">Aplly</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="auth">
+          <div class="trolly">
+            <!-- <img src="../img/icon/trolly.png" alt=""> -->
+            <a href="./pages/myBag.html">
+              <i class="fa fa-shopping-cart fa-lg" style="color: grey;"></i>
+            </a>
+          </div>
+          <a href="./pages/login.html" class="butn btn btn-primary">Login</a>
+          <a href="./pages/sign-up-customer.html" class="butn2 btn btn-outline">Signup</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

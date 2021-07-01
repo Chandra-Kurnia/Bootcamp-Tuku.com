@@ -35,6 +35,9 @@
                     <div class="input-group mb-3">
                         <input type="text" class="search form-control" placeholder="Search" aria-label="Search"
                             aria-describedby="basic-addon1">
+                            <button class="btn rounded-start rounded-pill" style="background-color: white; border-top: 1px solid #d3d8de;border-right: 1px solid #d3d8de; border-bottom: 1px solid #d3d8de;">
+                                <i class="fa fa-search"></i>
+                        </button>
                     </div>
                     <div class="filter">
                         <button class="btn" data-bs-toggle="modal" id="filter" data-bs-target="#exampleModal">
@@ -142,30 +145,30 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <div class="nav-item-right">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <li class="nav-item mb-3">
                                 <a href="./myBag.html">
                                     <i class="fas fa-shopping-cart"></i>
                                     <label class="label-item">Cart</label>
                                 </a>
                             </li>
                             <br>
-                            <li class="nav-item">
+                            <li class="nav-item mb-3">
                                 <a href="">
                                     <i class="far fa-bell"></i>
                                     <label class="label-item">Notification</label>
                                 </a>
                             </li>
                             <br>
-                            <li class="nav-item">
+                            <li class="nav-item mb-3">
                                 <a href="">
                                     <i class="far fa-envelope"></i>
                                     <label class="label-item">Message</label>
                                 </a>
                             </li>
                             <br>
-                            <li class="profile-circle nav-item">
+                            <li class="profile-circle nav-item mb-3">
                                 <a href="./profile.html">
-                                    <img class="rounded-circle image-profile" src="../img/Profile.png" alt="">
+                                    <img class="rounded-circle image-profile" src="../img/Profile.jpg" alt="">
                                     <label class="label-item">Profile</label>
                                 </a>
                             </li>
@@ -468,10 +471,10 @@
                                         </div>
                                     </div>
                                     <hr style="width: 450px; background-color: grey; margin-left: -20px;">
-                                    <p style="display: inline-block;">
+                                    <span style="display: inline-block;">
                                         <b>Shopping summary</b>
                                         <br>
-                                    </p>
+                                    </span>
                                     <div class="row">
                                         <div class="col" style="color: grey; font-weight: bold;">Order</div>
                                         <div class="col" style="text-align: right; font-weight: bold; color: black;">
@@ -485,7 +488,7 @@
                                 </div>
                                 <div class="modal-footer" style="margin-top: 200px;">
                                     <div class="row">
-                                        <div class="col" style="text-align: left; margin-left: -200px;">
+                                        <div class="col shp-summ" style="margin-left: -200px;">
                                             <b>Shopping summary</b>
                                             <br>
                                             <b style="color: red; font-weight: bold;">$ 45.0</b>

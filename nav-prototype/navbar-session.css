@@ -1,0 +1,299 @@
+html body {
+    margin: 0;
+    font-family: 'CustomFont', metropolisregular;
+}
+
+
+/* DESKTOP RESOLUTION */
+/* Navbar */
+.nav-content{
+    display: flex;
+    margin-top: 15px;
+}
+/* Navbar-brand */
+
+header{
+    width: 100%;
+    font-weight: bold;
+}
+
+header img{
+    margin-right: -10px;
+    margin-top: -5px;
+}
+
+/* End navbar brand */
+/* Search */
+.search {
+    width: 507px;
+    border-radius: 100px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.search::-webkit-input-placeholder { /* Edge */
+    font-size: smaller;
+  }
+/* End Search */
+
+/* filter */
+.filter #filter{
+    width: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 1px;
+    margin-left: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.filter button img{
+    position: relative;
+    margin: auto -4px;
+}
+
+/* Filter - modal */
+.mbody{
+    padding: 3px 3px 3px 26px;
+}
+
+/* Custom Checkbox */
+.label-item {
+    font-size: 12px;
+    color: grey;
+    border-color: rgba(108, 117, 125, .5)
+}
+
+.label-item:hover {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:focus+.label-item, .label-item:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.384)
+}
+
+.btn-check:active+.label-item, .btn-check:checked+.label-item, .label-item.active, .label-item.dropdown-toggle.show, .label-item:active {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:active+.label-item:focus, .btn-check:checked+.label-item:focus, .label-item.active:focus, .label-item.dropdown-toggle.show:focus, .label-item:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .5)
+}
+/* End Custom Checkbox */
+/* Modal-filter-color */
+.color-item{
+    width: 350px;
+}
+
+.color-black, .color-white, .color-red, .color-grey, .color-yellow, .color-blue{
+    border-radius: 100px;
+    border: 4px solid white;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+/* Black */
+.color-black {
+    background-color: black;
+}
+
+#black:checked ~ .color-black{
+    box-shadow: 0px 0px 0px 1px red;
+    /* -webkit-outline-radius: 50%; */
+}
+
+/* white */
+.color-white {
+    background-color: white;
+    border: 1px solid rgba(179, 179, 179, 0.623);
+}
+
+#white:checked ~ .color-white{
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* red */
+.color-red {
+    background-color: red;
+}
+
+#red:checked ~ .color-red{
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* grey */
+.color-grey {
+    background-color: grey;
+}
+
+#grey:checked ~ .color-grey{
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* yellow */
+.color-yellow {
+    background-color: yellow;
+}
+
+#yellow:checked ~ .color-yellow{
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* blue */
+.color-blue {
+    background-color: blue;
+}
+
+#blue:checked ~ .color-blue{
+    box-shadow: 0px 0px 0px 1px red;
+}
+/* End-filter-color */
+/* filter-size */
+.size label{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0px 16px 0px 0px;
+}
+/* End filter-size */
+/* Filter category */
+.category label{
+    display: inline-block;
+    width: 100px;
+    margin: 5px 22px 5px 0px;
+}
+/* End category */
+/* Filter brand */
+.brand{
+    border: none;
+    margin-left: -12px;
+    margin-top: -16px;
+}
+
+.brand option{
+    font-family: 'CustomFont', metropolisregular;
+}
+
+.brand-opt{
+    width: 450px;
+    color: grey;
+}
+/* End Filter brand */
+/* modal-footer */
+.modal-foot button{
+    border-radius: 100px;
+    border: none;
+    width: 160px;
+    height: 36px;
+    margin: 0px 0px 30px 0px;
+}
+
+.modal-foot #button-discard{
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 75px;
+}
+
+.modal-foot #button-discard:hover{
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply{
+    background-color: red;
+    margin-left: -5px;
+}
+
+.modal-foot #button-apply:hover{
+    background-color: rgb(196, 0, 0);
+}
+/* End filter */
+
+/* Navbar item */
+.nav-item-right{
+    /* background-color: red; */
+    height: 40px;
+    position: absolute;
+    right: 0;
+}
+
+.nav-item-right li{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+/* End Navbar item */
+
+/* Phone Version */
+@media(max-width: 576px){
+    /* Navbar */
+
+    .search {
+        width: 198px;
+        border-radius: 100px;
+        margin-top: 2px;
+        margin-left: 0px;
+    }
+    
+    .search::-webkit-input-placeholder {
+        font-size: smaller;
+      }
+
+      .auth .butn, .butn2{
+        border-radius: 100px;
+        margin: 5px;
+        width: 93px;
+        height: 36px;
+    }
+    
+    .auth .butn{
+        background-color: #DB3022;
+        border: none;
+        margin-left: 88px;
+    }
+
+    .trolly{
+        width: 40px;
+        margin: auto 9px;
+        margin-left: 10px;
+        order: 1;
+        border: 1px solid grey;
+        padding: 6px;
+        border-radius: 30%;
+    }
+
+    .modal-foot #button-discard{
+        margin-left: 5px;
+    }
+}
+
+/* Mobile Version */
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Navbar */
+    .search {
+        width: 198px;
+        border-radius: 100px;
+        margin-top: 2px;
+        /* margin-left: 20px; */
+    }
+    
+    .search::-webkit-input-placeholder {
+        font-size: smaller;
+      }
+}
+
+/* Custom font */
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('../fonts/metropolis.regular-webfont.woff2') format('woff2'), url('../fonts/metropolis.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

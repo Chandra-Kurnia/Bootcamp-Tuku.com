@@ -132,7 +132,7 @@ header img {
 }
 
 #black:checked~.color-black {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
     /* -webkit-outline-radius: 50%; */
 }
 
@@ -144,7 +144,7 @@ header img {
 }
 
 #white:checked~.color-white {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
 }
 
 /* red */
@@ -154,7 +154,7 @@ header img {
 }
 
 #red:checked~.color-red {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
 }
 
 /* grey */
@@ -164,7 +164,7 @@ header img {
 }
 
 #grey:checked~.color-grey {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
 }
 
 /* yellow */
@@ -174,7 +174,7 @@ header img {
 }
 
 #yellow:checked~.color-yellow {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
 }
 
 /* blue */
@@ -184,7 +184,7 @@ header img {
 }
 
 #blue:checked~.color-blue {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
 }
 
 /* Color picker for product */
@@ -192,21 +192,21 @@ header img {
 /* Black */
 
 #black-product:checked~.color-black {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
     /* -webkit-outline-radius: 50%; */
 }
 
 /* red */
 
 #red-product:checked~.color-red {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
     /* -webkit-outline-radius: 50%; */
 }
 
 /* blue */
 
 #blue-product:checked~.color-blue {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
     /* -webkit-outline-radius: 50%; */
 }
 
@@ -217,7 +217,7 @@ header img {
 }
 
 #green:checked~.color-green {
-    outline: 2px solid red;
+    box-shadow: 0px 0px 0px 1px red;
 }
 
 /* End Color Picker */
@@ -365,8 +365,8 @@ header img {
 }
 
 .item-gallery {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     /* background-color: greenyellow; */
     margin: auto;
 }
