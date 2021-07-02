@@ -11,47 +11,39 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x14">
-    <title>Login |Tuku.com</title>
+    <title>Reset password | Tuku</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="login text-center">
+        <div class="sign-up text-center">
             <div class="logo">
                 <p>
                     <img src="../img/logo-login.svg" alt=""> Tuku
                 </p>
             </div>
             <div class="message text-center">
-                <span class="text-center">Please login with your account</span>
+                <span class="text-center">Reset password</span>
             </div>
-            <div class="priv">
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <!-- Custommer -->
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="radio-label btn" style="border-color: #DB3022;" for="btnradio1">Custommer</label>
-                    <!-- Seller -->
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="radio-label btn" style="border-color: #DB3022;" for="btnradio3">Seller</label>
-                </div>
-            </div>
+            <br>
+            <span style="color: red;">You need to change your password to activate your account</span>
             <div class="input">
                 <div class="input-group mb-3" id="input">
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                    <input type="password" class="form-control" placeholder="Password" aria-label="email"
                         aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3" id="input">
-                    <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                    <input type="password" class="form-control" placeholder="Confirmation New Password" aria-label="email"
                         aria-describedby="basic-addon1">
                 </div>
                 <span>
                     <a href="./reset-pw.html">Forgot Password ?</a>
                 </span>
-                <button type="submit" class="submit btn">
+                <button type="submit" style="margin-top: 0px;" class="submit btn">
                     PRIMARY
                 </button>
             </div>
-            <span class="sign-up">Dont have a Tuku Account ? <a href="./sign-up-customer.html" style="text-decoration: none; color: #DB3022;"> Register</a></span>
+            </div>
         </div>
     </div>
 
