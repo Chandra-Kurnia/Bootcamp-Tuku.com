@@ -1,0 +1,649 @@
+/* Navbar */
+
+.search {
+    width: 400px;
+    display: flex;
+    /* padding-left: 60px; */
+}
+
+.search input {
+    height: 40px;
+    border-radius: 100px;
+    padding-left: 25px;
+}
+
+.filter #filter {
+    /* background-color: white; */
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 3px;
+    background-image: url('../img/icon/nav-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter button img {
+    width: 20px;
+    height: 30px;
+    position: relative;
+    margin: auto -4px;
+}
+
+/* Modal */
+
+.mbody {
+    padding: 3px 3px 3px 26px;
+}
+
+/* Filter */
+
+.color-item {
+    width: 350px;
+}
+
+/* Color Picker */
+
+.color-black, .color-red, .color-grey, .color-yellow, .color-blue {
+    border-radius: 100px;
+    border: 4px solid white;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+/* Black */
+
+.color-black {
+    background-color: black;
+}
+
+#black:checked~.color-black {
+    box-shadow: 0px 0px 0px 1px red;
+    /* -webkit-outline-radius: 50%; */
+}
+
+/* white */
+
+.color-white {
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px grey;
+}
+
+#white:checked~.color-white {
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* red */
+
+.color-red {
+    background-color: red;
+}
+
+#red:checked~.color-red {
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* grey */
+
+.color-grey {
+    background-color: grey;
+}
+
+#grey:checked~.color-grey {
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* yellow */
+
+.color-yellow {
+    background-color: yellow;
+}
+
+#yellow:checked~.color-yellow {
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* blue */
+
+.color-blue {
+    background-color: blue;
+}
+
+#blue:checked~.color-blue {
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* End Color Picker */
+
+.modal-foot .row button {
+    border-radius: 100px;
+    border: none;
+    width: 160px;
+    height: 36px;
+    margin: 0px 0px 30px 0px;
+}
+
+.modal-foot #button-discard {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.modal-foot #button-discard:hover {
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply {
+    background-color: red;
+    margin-left: -5px;
+}
+
+.modal-foot #button-apply:hover {
+    background-color: rgb(196, 0, 0);
+}
+
+/* Filter size */
+.size label {
+    border: 1px solid grey;
+    font-size: small;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 0px 16px 0px 0px;
+}
+
+.label-item {
+    color: grey;
+    font-size: small;
+    border-color: rgba(108, 117, 125, .5)
+}
+
+
+.btn-check:focus+.label-item, .label-item:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.384)
+}
+
+.btn-check:active+.label-item, .btn-check:checked+.label-item, .label-item.active, .label-item.dropdown-toggle.show, .label-item:active {
+    color: #fff;
+    background-color: red;
+    border-color: red
+}
+
+.btn-check:active+.label-item:focus, .btn-check:checked+.label-item:focus, .label-item.active:focus, .label-item.dropdown-toggle.show:focus, .label-item:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .5)
+}
+
+/* Filter Category */
+
+.category button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    top: 110px;
+    /* border: 1px solid rgba(0, 0, 0, 0.274); */
+    border: none;
+}
+
+.category #prev-button {
+    left: -25px;
+    opacity: 100;
+}
+
+.category #next-button {
+    right: -25px;
+    overflow-wrap: 100;
+}
+
+.category label {
+    display: inline-block;
+    width: 100px;
+    margin: 5px 22px 5px 0px;
+}
+
+/* Brand */
+
+#brand {
+    border: none;
+    margin-left: -12px;
+    margin-top: -16px;
+}
+
+.brand-opt {
+    width: 450px;
+    color: grey;
+}
+
+.container-nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container-nav .navbar-brand {
+    text-decoration: none;
+    color: #DB3022;
+    display: inline-block;
+    /* padding-bottom: 20px; */
+}
+
+.container-nav img {
+    width: 31px;
+    height: 44px;
+    padding-bottom: 8px;
+}
+
+.nav-item{
+    margin-bottom: 20px;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.nav-item a i {
+    color: grey;
+}
+
+.nav-item a i:hover {
+    color: red;
+}
+
+.nav-item label:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.profile-circle img {
+    /* border-radius: 50%; */
+    width: 16px;
+    height: 16px;
+}
+
+.navbar-toggler-icon {
+    width: 0.7em;
+    height: 1em;
+}
+
+/* End Filter */
+
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.side {
+    display: none;
+}
+
+/* Sidebar Profile */
+
+.sidebar .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.sidebar .edit {
+    color: grey;
+    font-size: 15px;
+}
+
+.sidebar .side .edit img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Action */
+
+.action {
+    padding-top: 80px;
+}
+
+.action ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.action ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sub user */
+
+.sub-user, .sub-loc, .sub-clipboard {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-user {
+    background-color: #456BF3;
+}
+
+.sub-loc {
+    background-color: #F36F45;
+}
+
+.sub-clipboard {
+    background-color: #F3456F;
+}
+
+.sub-user img, .sub-loc img, .sub-clipboard img {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+/* End action */
+
+/* End Sidebar */
+
+/* Content */
+
+.content-wrapper {
+    padding-top: 30px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    transition: all 300ms ease-in-out;
+}
+
+.add-address{
+    background-color: white;
+    border: 3px dashed rgb(180, 180, 180);
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.add-address button{
+    background-color: white;
+    border: none;
+    color: grey;
+}
+
+
+
+
+.side-mobile{
+    display: normal;
+}
+
+/* End Content */
+
+#sidebar-toggle {
+    display: none;
+}
+
+#sidebar-toggle:checked~.side {
+    margin-left: -380px;
+}
+
+#sidebar-toggle:checked~.content-wrapper {
+    width: 100%;
+}
+
+.form-check-input:focus {
+    border-color: #ff0000;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0.25)
+}
+
+.form-check-input:checked {
+    background-color: red;
+}
+
+.modal-body .container .row input{
+    height: 40px;
+}
+
+.modal-body .container .row{
+    color: grey;
+    font-size: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.another-address{
+    background-color: white;
+    border-radius: 20px;
+    color: grey;
+    font-size: smaller;
+    width: 150px;
+    height: 36px;
+    border: 1px solid grey;
+}
+
+.another-address:hover{
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.btn-save-address{
+    border-radius: 20px;
+    font-size: smaller;
+    width: 150px;
+    height: 36px;
+}
+
+.btn-save-address:hover{
+    background-color: rgb(201, 24, 24);
+    color: white;
+}
+
+.current-address button{
+    background-color: white;
+    color: red;
+    border: none;
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+@media (min-width: 576px) {
+    .search {
+        width: 700px;
+        display: flex;
+        padding-left: 60px;
+    }
+    .container-nav a {
+        text-decoration: none;
+        color: #DB3022;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .container-nav {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        position: relative;
+    }
+    .nav-item-right {
+        /* background-color: red; */
+        height: 40px;
+        position: absolute;
+        right: 0;
+    }
+    .nav-item-right li {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    .label-item {
+        display: none;
+    }
+    .profile-circle {
+        width: 50px;
+        height: 50px;
+    }
+    .profile-circle img {
+        width: 30px;
+        height: 40px;
+    }
+
+    .content {
+        background-color: white;
+        width: 100%;
+        height: 550px;
+        border: 2px solid #9B9B9B;
+        border-radius: 5px;
+        padding-top: 20px;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+        width: 75%;
+        height: 100vh;
+        background-color: #F5F5F5;
+        transition: all 300ms ease-in-out;
+    }
+
+    .form-control {
+        width: 450px;
+        height: 48px;
+        margin-left: 0px;
+    }
+
+    .profile-left{
+        border-right: 1px solid grey;
+        order: 0;
+    }
+
+    .radio-gender{
+        padding-left: 12px;
+    }
+
+    .select-content{
+        padding-left: 10px;
+    }
+
+    .form-select {
+        width: 100%;
+    }
+
+    .btn-save-profile {
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .side-mobile{
+        display: none;
+    }
+
+    .side {
+        width: 25%;
+        height: 100vh;
+        padding-top: 150px;
+        padding-left: 100px;
+        /* background-color: red; */
+        transition: all 300ms ease-in-out;
+        display: flex;
+    }
+
+    .brand-opt{
+        width: 450px;
+        color: grey;
+    }
+
+    .modal-foot #button-discard {
+        margin-left: 80px;
+    }
+
+    .modal-body .container .row input{
+        height: 48px;
+    }
+
+    .modal-body .container .row{
+        color: grey;
+        font-size: small;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .add-address{
+        background-color: white;
+        border: 3px dashed rgb(180, 180, 180);
+        height: 50px;
+        padding-top: 10px;
+        border-radius: 5px;
+    }
+
+    .add-address button{
+        background-color: white;
+        border: none;
+        color: grey;
+    }
+
+    .current-address{
+        padding: 20px;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+
+    .current-address button{
+        background-color: white;
+        color: red;
+        border: none;
+        font-weight: bold;
+        margin-left: -5px;
+    }
+    
+    .another-address{
+        background-color: white;
+        border-radius: 20px;
+        color: grey;
+        font-size: smaller;
+        width: 200px;
+        height: 36px;
+        border: 1px solid grey;
+    }
+    
+    .another-address:hover{
+        border: none;
+        background-color: red;
+        color: white;
+    }
+
+    .btn-save-address{
+        border-radius: 20px;
+        font-size: smaller;
+        width: 200px;
+        height: 36px;
+    }
+    
+    .btn-save-address:hover{
+        background-color: rgb(201, 24, 24);
+        color: white;
+    }
+}
+
+html, body {
+    margin: 0;
+    font-family: 'CustomFont', metropolisregular;
+}
+
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('../fonts/metropolis.regular-webfont.woff2') format('woff2'), url('../fonts/metropolis.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
