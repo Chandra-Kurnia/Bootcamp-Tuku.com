@@ -8,12 +8,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/profile-address.css">
+    <link rel="stylesheet" href="../css/my-order.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="../css/home.css"> -->
-    <title>Tuku | My Address</title>
+    <title>Tuku | My Profile</title>
     <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x14">
 </head>
 
@@ -35,11 +35,10 @@
                     <div class="input-group mb-3">
                         <input type="text" class="search form-control" placeholder="Search" aria-label="Search"
                             aria-describedby="basic-addon1">
-                        <button class="btn rounded-start rounded-pill"
-                            style="background-color: white; border-top: 1px solid #d3d8de;border-right: 1px solid #d3d8de; border-bottom: 1px solid #d3d8de;">
-                            <i class="fa fa-search"></i>
+                            <button class="btn rounded-start rounded-pill" style="background-color: white; border-top: 1px solid #d3d8de;border-right: 1px solid #d3d8de; border-bottom: 1px solid #d3d8de;">
+                                <i class="fa fa-search"></i>
                         </button>
-                    </div>
+                        </div>
                     <div class="filter">
                         <button class="btn" data-bs-toggle="modal" id="filter" data-bs-target="#exampleModal">
                         </button>
@@ -156,14 +155,14 @@
                                     <label class="label-item">Notification</label>
                                 </a>
                             </li>
-
+    
                             <li class="nav-item">
                                 <a href="">
                                     <i class="far fa-envelope"></i>
                                     <label class="label-item">Message</label>
                                 </a>
                             </li>
-
+    
                             <li class="profile-circle nav-item">
                                 <a href="">
                                     <label for="sidebar-toggle">
@@ -206,11 +205,11 @@
                     </li>
                     <br>
                     <li>
-                        <a href="">
+                        <a href="./profile-adress.html">
                             <div class="sub-loc rounded-circle">
                                 <img src="../img/loc.png" alt="">
                             </div>
-                            <div class="sub-usr-text usr-menu-active">
+                            <div class="sub-usr-text">
                                 Shipping address
                             </div>
                         </a>
@@ -221,7 +220,7 @@
                             <div class="sub-clipboard rounded-circle">
                                 <img src="../img/clipboard.png" alt="">
                             </div>
-                            <div class="sub-usr-text">
+                            <div class="sub-usr-text  usr-menu-active">
                                 My Order
                             </div>
                         </a>
@@ -251,135 +250,57 @@
                 </div>
             </div>
             <div class="content container">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title ms-auto me-auto">
-                            <b>Chose another address</b>
-                        </h5>
+                <h3 class=" fw-bold">
+                    My Order
+                </h3>
+                <div class="table-order d-flex fw-bold" style="border-bottom: 1px solid grey;">
+                    <input type="radio" class="table-order-radio-all d-none" name="table-order-radio" id="table-order-all" checked>
+                    <input type="radio" class="table-order-radio-nyp d-none" name="table-order-radio" id="table-order-nyp">
+                    <input type="radio" class="table-order-radio-packed d-none" name="table-order-radio" id="table-order-packed">
+                    <input type="radio" class="table-order-radio-sent d-none" name="table-order-radio" id="table-order-sent">
+                    <input type="radio" class="table-order-radio-completed d-none" name="table-order-radio" id="table-order-completed">
+                    <input type="radio" class="table-order-radio-cancel d-none" name="table-order-radio" id="table-order-cancel">
+                    
+                    <div class="table-order-all me-5">
+                        <label for="table-order-all">All Items</label>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="add-address text-center">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#add-address">
-                                    Add new address
-                                </button>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="add-address" tabindex="-1"
-                                    aria-labelledby="add-addressLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px;">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="add-addressLabel"
-                                                    style="margin-left: auto;">
-                                                    <b>Add new address</b>
-                                                </h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <p>
-                                                            Save address as (ex : home address, office
-                                                            address)
-                                                        </p>
-                                                        <div class="input-group flex-nowrap">
-                                                            <input type="text" class="form-control"
-                                                                aria-label="Username" aria-describedby="addon-wrapping">
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            Recipient’s name
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            Recipient's telephone number
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            Address
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            Postal code
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            City or Subdistrict
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="form-check" style="margin-left: 25px;">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckChecked" checked>
-                                                    <p style="text-align: left; font-weight: normal; color: grey;">
-                                                        Make it primary address</p>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn another-address"
-                                                    style="border: 1px solid grey;"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-save-address"
-                                                    style="background-color: #DB3022; color: white;">Save
-                                                    changes</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <br>
-                            <div class="current-address">
-                                <p style="font-size: large;"><b>Address Jane</b> </p>
-                                <p style="font-weight: normal; font-size: small;">Perumahan Sapphire
-                                    Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa
-                                    Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas,
-                                    53181</p>
-                                <button>Change address</button>
-                            </div>
-                        </div>
+                    <div class="table-order-nyp me-5">
+                        <label for="table-order-nyp">Not Yet Paid</label>
                     </div>
+                    <div class="table-order-packed me-5">
+                        <label for="table-order-packed">Packed</label>
+                    </div>
+                    <div class="table-order-sent me-5">
+                        <label for="table-order-sent">Sent</label>
+                    </div>
+                    <div class="table-order-completed me-5">
+                        <label for="table-order-completed">Completed</label>
+                    </div>
+                    <div class="table-order-cancel me-5">
+                        <label for="table-order-cancel">Order Cancel</label>
+                    </div>
+                    <!-- <div class="table-order me-5">
+                        <input type="radio" class="d-none" name="table-order-radio" id="table-order">
+                        <label for="table-order" style="color: grey;">Packed</label>
+                    </div>
+                    <div class="table-order me-5">
+                        <input type="radio" class="d-none" name="table-order-radio" id="table-order">
+                        <label for="table-order" style="color: grey;">Sent</label>
+                    </div>
+                    <div class="table-order me-5">
+                        <input type="radio" class="d-none" name="table-order-radio" id="table-order">
+                        <label for="table-order" style="color: grey;">Completed</label>
+                    </div>
+                    <div class="table-order me-5">
+                        <input type="radio" class="d-none" name="table-order-radio" id="table-order">
+                        <label for="table-order" style="color: grey;">Order Cancel</label>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

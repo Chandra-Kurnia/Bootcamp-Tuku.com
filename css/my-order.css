@@ -125,7 +125,7 @@
 
 /* End Color Picker */
 
-.modal-foot .row button {
+.modal-foot button {
     border-radius: 100px;
     border: none;
     width: 160px;
@@ -171,6 +171,11 @@
     border-color: rgba(108, 117, 125, .5)
 }
 
+.label-item:hover {
+    color: #fff;
+    /* background-color: red; */
+    border-color: red;
+}
 
 .btn-check:focus+.label-item, .label-item:focus {
     box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.384)
@@ -198,16 +203,6 @@
     border: none;
 }
 
-.category #prev-button {
-    left: -25px;
-    opacity: 100;
-}
-
-.category #next-button {
-    right: -25px;
-    overflow-wrap: 100;
-}
-
 .category label {
     display: inline-block;
     width: 100px;
@@ -226,6 +221,28 @@
     width: 450px;
     color: grey;
 }
+
+.modal-foot #button-discard {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.modal-foot #button-discard:hover {
+    background-color: red;
+    color: white;
+}
+
+.modal-foot #button-apply {
+    background-color: red;
+    margin-left: -5px;
+}
+
+.modal-foot #button-apply:hover {
+    background-color: rgb(196, 0, 0);
+}
+
 
 .container-nav {
     padding-top: 5px;
@@ -378,27 +395,99 @@
     transition: all 300ms ease-in-out;
 }
 
-.add-address{
+.content {
     background-color: white;
-    border: 3px dashed rgb(180, 180, 180);
-    height: 50px;
-    padding-top: 10px;
+    width: 100%;
+    height: 130vh;
+    border: 2px solid #9B9B9B;
     border-radius: 5px;
+    padding-top: 20px;
 }
 
-.add-address button{
-    background-color: white;
-    border: none;
+
+/* Table-order */
+
+.table-order label{
     color: grey;
 }
 
-
-
-
-.side-mobile{
-    display: normal;
+/* All orders */
+.table-order-radio-all:checked ~ .table-order-all label{
+    color: red;
+    transition: all 300ms ease-in-out;
 }
 
+.table-order-radio-all:checked ~ .table-order-all{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+/* Not yet paid */
+.table-order-radio-nyp:checked ~ .table-order-nyp label{
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.table-order-radio-nyp:checked ~ .table-order-nyp{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+/* Packed */
+.table-order-radio-packed:checked ~ .table-order-packed label{
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.table-order-radio-packed:checked ~ .table-order-packed{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+/* sent */
+.table-order-radio-sent:checked ~ .table-order-sent label{
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.table-order-radio-sent:checked ~ .table-order-sent{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+/* completed */
+.table-order-radio-completed:checked ~ .table-order-completed label{
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.table-order-radio-completed:checked ~ .table-order-completed{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+/* cancel */
+.table-order-radio-cancel:checked ~ .table-order-cancel label{
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.table-order-radio-cancel:checked ~ .table-order-cancel{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EndTable-order */
 /* End Content */
 
 #sidebar-toggle {
@@ -411,63 +500,6 @@
 
 #sidebar-toggle:checked~.content-wrapper {
     width: 100%;
-}
-
-.form-check-input:focus {
-    border-color: #ff0000;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0.25)
-}
-
-.form-check-input:checked {
-    background-color: red;
-}
-
-.modal-body .container .row input{
-    height: 40px;
-}
-
-.modal-body .container .row{
-    color: grey;
-    font-size: 10px;
-    text-align: left;
-    font-weight: normal;
-}
-
-.another-address{
-    background-color: white;
-    border-radius: 20px;
-    color: grey;
-    font-size: smaller;
-    width: 150px;
-    height: 36px;
-    border: 1px solid grey;
-}
-
-.another-address:hover{
-    border: none;
-    background-color: red;
-    color: white;
-}
-
-.btn-save-address{
-    border-radius: 20px;
-    font-size: smaller;
-    width: 150px;
-    height: 36px;
-}
-
-.btn-save-address:hover{
-    background-color: rgb(201, 24, 24);
-    color: white;
-}
-
-.current-address button{
-    background-color: white;
-    color: red;
-    border: none;
-    font-weight: bold;
-    margin-left: -5px;
 }
 
 @media (min-width: 576px) {
@@ -575,73 +607,6 @@
 
     .modal-foot #button-discard {
         margin-left: 80px;
-    }
-
-    .modal-body .container .row input{
-        height: 48px;
-    }
-
-    .modal-body .container .row{
-        color: grey;
-        font-size: small;
-        text-align: left;
-        font-weight: normal;
-    }
-
-    .add-address{
-        background-color: white;
-        border: 3px dashed rgb(180, 180, 180);
-        height: 50px;
-        padding-top: 10px;
-        border-radius: 5px;
-    }
-
-    .add-address button{
-        background-color: white;
-        border: none;
-        color: grey;
-    }
-
-    .current-address{
-        padding: 20px;
-        border: 1px solid red;
-        border-radius: 5px;
-    }
-
-    .current-address button{
-        background-color: white;
-        color: red;
-        border: none;
-        font-weight: bold;
-        margin-left: -5px;
-    }
-    
-    .another-address{
-        background-color: white;
-        border-radius: 20px;
-        color: grey;
-        font-size: smaller;
-        width: 200px;
-        height: 36px;
-        border: 1px solid grey;
-    }
-    
-    .another-address:hover{
-        border: none;
-        background-color: red;
-        color: white;
-    }
-
-    .btn-save-address{
-        border-radius: 20px;
-        font-size: smaller;
-        width: 200px;
-        height: 36px;
-    }
-    
-    .btn-save-address:hover{
-        background-color: rgb(201, 24, 24);
-        color: white;
     }
 }
 
