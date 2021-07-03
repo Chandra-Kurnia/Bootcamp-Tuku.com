@@ -388,6 +388,7 @@
 .usr-menu-active{
     color: black;
     font-weight: bold;
+    padding-left: 5px;
 }
 
 /* End action */
