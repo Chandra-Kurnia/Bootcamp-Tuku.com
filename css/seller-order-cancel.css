@@ -1,259 +1,4 @@
 /* Navbar */
-
-.search {
-    width: 400px;
-    display: flex;
-    /* padding-left: 60px; */
-}
-
-.search input {
-    height: 40px;
-    border-radius: 100px;
-    padding-left: 25px;
-}
-
-.filter #filter {
-    /* background-color: white; */
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    margin-left: 15px;
-    width: 40px;
-    height: 40px;
-    border-radius: 15px;
-    margin-top: 3px;
-    background-image: url('../img/icon/nav-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.filter button img {
-    width: 20px;
-    height: 30px;
-    position: relative;
-    margin: auto -4px;
-}
-
-/* Modal */
-
-.mbody {
-    padding: 3px 3px 3px 26px;
-}
-
-/* Filter */
-
-.color-item {
-    width: 350px;
-}
-
-/* Color Picker */
-
-.color-black, .color-red, .color-grey, .color-yellow, .color-blue {
-    border-radius: 100px;
-    border: 4px solid white;
-    width: 35px;
-    height: 35px;
-    margin: 5px;
-}
-
-/* Black */
-
-.color-black {
-    background-color: black;
-}
-
-#black:checked~.color-black {
-    box-shadow: 0px 0px 0px 1px red;
-    /* -webkit-outline-radius: 50%; */
-}
-
-/* white */
-
-.color-white {
-    border-radius: 50%;
-    border: 4px solid white;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    background-color: white;
-    box-shadow: 0px 0px 1px 1px grey;
-}
-
-#white:checked~.color-white {
-    width: 35px;
-    height: 35px;
-    box-shadow: 0px 0px 0px 1px red;
-}
-
-/* red */
-
-.color-red {
-    background-color: red;
-}
-
-#red:checked~.color-red {
-    box-shadow: 0px 0px 0px 1px red;
-}
-
-/* grey */
-
-.color-grey {
-    background-color: grey;
-}
-
-#grey:checked~.color-grey {
-    box-shadow: 0px 0px 0px 1px red;
-}
-
-/* yellow */
-
-.color-yellow {
-    background-color: yellow;
-}
-
-#yellow:checked~.color-yellow {
-    box-shadow: 0px 0px 0px 1px red;
-}
-
-/* blue */
-
-.color-blue {
-    background-color: blue;
-}
-
-#blue:checked~.color-blue {
-    box-shadow: 0px 0px 0px 1px red;
-}
-
-/* End Color Picker */
-
-.modal-foot button {
-    border-radius: 100px;
-    border: none;
-    width: 160px;
-    height: 36px;
-    margin: 0px 0px 30px 0px;
-}
-
-.modal-foot #button-discard {
-    background-color: white;
-    color: black;
-    border: 1px solid red;
-    margin-left: 20px;
-}
-
-.modal-foot #button-discard:hover {
-    background-color: red;
-    color: white;
-}
-
-.modal-foot #button-apply {
-    background-color: red;
-    margin-left: -5px;
-}
-
-.modal-foot #button-apply:hover {
-    background-color: rgb(196, 0, 0);
-}
-
-/* Filter size */
-.size label {
-    border: 1px solid grey;
-    font-size: small;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding-top: 10px;
-    margin: 0px 16px 0px 0px;
-}
-
-.label-item {
-    color: grey;
-    font-size: small;
-    border-color: rgba(108, 117, 125, .5)
-}
-
-.label-item:hover {
-    color: #fff;
-    /* background-color: red; */
-    border-color: red;
-}
-
-.btn-check:focus+.label-item, .label-item:focus {
-    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.384)
-}
-
-.btn-check:active+.label-item, .btn-check:checked+.label-item, .label-item.active, .label-item.dropdown-toggle.show, .label-item:active {
-    color: #fff;
-    background-color: red;
-    border-color: red
-}
-
-.btn-check:active+.label-item:focus, .btn-check:checked+.label-item:focus, .label-item.active:focus, .label-item.dropdown-toggle.show:focus, .label-item:active:focus {
-    box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .5)
-}
-
-/* Filter Category */
-
-.category button {
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    position: absolute;
-    top: 110px;
-    /* border: 1px solid rgba(0, 0, 0, 0.274); */
-    border: none;
-}
-
-.category #prev-button {
-    left: -25px;
-    opacity: 100;
-}
-
-.category #next-button {
-    right: -25px;
-    overflow-wrap: 100;
-}
-
-.category label {
-    display: inline-block;
-    width: 100px;
-    margin: 5px 22px 5px 0px;
-}
-
-/* Brand */
-
-#brand {
-    border: none;
-    margin-left: -12px;
-    margin-top: -16px;
-}
-
-.brand-opt {
-    width: 450px;
-    color: grey;
-}
-
-.modal-foot #button-discard {
-    background-color: white;
-    color: black;
-    border: 1px solid red;
-    margin-left: 20px;
-}
-
-.modal-foot #button-discard:hover {
-    background-color: red;
-    color: white;
-}
-
-.modal-foot #button-apply {
-    background-color: red;
-    margin-left: -5px;
-}
-
-.modal-foot #button-apply:hover {
-    background-color: rgb(196, 0, 0);
-}
-
-
 .container-nav {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -302,6 +47,12 @@
 .navbar-toggler-icon {
     width: 0.7em;
     height: 1em;
+}
+
+.label-item {
+    color: grey;
+    font-size: small;
+    border-color: rgba(108, 117, 125, .5)
 }
 
 /* End Filter */
@@ -509,7 +260,7 @@
 .content {
     background-color: white;
     width: 100%;
-    height: 120vh;
+    height: 90vh;
     border: 2px solid #9B9B9B;
     border-radius: 5px;
     padding-top: 20px;
@@ -525,67 +276,111 @@
     font-weight: bold;
 }
 
-/* Profile detail */
+/* Table-order */
 
-.profile-left, .profile-right {
-    height: 200px;
+.table-order label{
+    color: grey;
 }
 
-/* Input */
-
-.profile-left .form-label {
-    text-align: right;
-    margin: auto;
-    color: #9B9B9B;
+.table-order label:hover{
+    cursor: pointer;
 }
 
-.form-control {
-    width: 250px;
-    height: 48px;
-    margin-left: 10px;
+/* All orders */
+.table-order-radio-all:checked ~ .table-order-all label{
+    color: red;
+    transition: all 300ms ease-in-out;
 }
 
-.form-select {
-    width: 250px;
-    margin-bottom: 10px;
+.table-order-radio-all:checked ~ .table-order-all{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
 }
 
-.btn-save-profile {
-    width: 250px;
-    margin-left: 8px;
-    background-color: #DB3022;
-    color: white;
-    border-radius: 20px;
+/* Not yet paid */
+.table-order-radio-nyp:checked ~ .table-order-nyp label{
+    color: red;
+    transition: all 300ms ease-in-out;
 }
 
-.btn-save-profile:hover {
-    color: white;
-    background-color: #9e291f;
+.table-order-radio-nyp:checked ~ .table-order-nyp{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
 }
 
-.profile-left{
-    order: 1;
+/* Packed */
+.table-order-radio-packed:checked ~ .table-order-packed label{
+    color: red;
+    transition: all 300ms ease-in-out;
 }
 
-.profile-right{
-    padding-left: 120px;
+.table-order-radio-packed:checked ~ .table-order-packed{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
 }
 
-.button-select-image{
-    margin-left: -5px;
-    width: 125px;
+/* sent */
+.table-order-radio-sent:checked ~ .table-order-sent label{
+    color: red;
+    transition: all 300ms ease-in-out;
 }
 
-.store-desc textarea{
-    resize: none;
-    border-radius: 5px;
-    width: 250px;
-    height: 130px;
+.table-order-radio-sent:checked ~ .table-order-sent{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
 }
 
-.select-content{
-    padding-left: 20px;
+/* completed */
+.table-order-radio-completed:checked ~ .table-order-completed label{
+    color: red;
+    transition: all 300ms ease-in-out;
 }
+
+.table-order-radio-completed:checked ~ .table-order-completed{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+/* cancel */
+.table-order-radio-cancel:checked ~ .table-order-cancel label{
+    color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.table-order-radio-cancel:checked ~ .table-order-cancel{
+    border-bottom: 4px solid red;
+    transition: all 100ms ease-in-out;
+}
+
+.search-order{
+    width: 100%;
+}
+
+.search-order input{
+    height: 36px;
+    border-radius: 23px;
+    border-left: none;
+}
+
+.search-order span{
+    border-radius: 23px;
+    background-color: white;
+}
+
+.no-order{
+    width: 100%;
+    height: 410px;
+    padding-top: 80px;
+}
+
+.no-order img{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* EndTable-order */
 
 .side-mobile{
     display: normal;
@@ -714,6 +509,10 @@
 
     .store-desc textarea{
         width: 450px;
+    }
+
+    .search-order{
+        width: 230px;
     }
 }
 
