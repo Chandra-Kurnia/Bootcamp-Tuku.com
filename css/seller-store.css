@@ -362,8 +362,6 @@
 
 .action ul li ul li .submenu-active{
     color: black;
-    padding-left: 10px;
-    font-weight: bold;
 }
 
 .sub-store, .sub-product, .sub-order {
@@ -392,28 +390,17 @@
     cursor: pointer;
 }
 
-.menu-active{
-    color: black;
-    font-weight: bold;
-    padding-left: 5px;
+.arrow-submenu{
+    color: grey;
+    position: absolute;
+    right: 100px;
+    transition: all 200ms ease-in-out;
 }
 
 /* Submenu store */
 
 .sub-store {
     background-color: #456BF3;
-}
-
-.arrow-submenu{
-    color: grey;
-    position: absolute;
-    right: 100px;
-}
-
-.arrow-submenu-active{
-    color: black; 
-    position: absolute;
-    right: 100px;
 }
 
 .sub-menu-store{
@@ -428,15 +415,20 @@
     display: block;
 }
 
+.checkbox-toggle-submenu-store:checked~.a-submenu-store label {
+    color: black;
+}
+
+.checkbox-toggle-submenu-store:checked~.a-submenu-store span {
+    color: black;
+    transform: rotate(-180deg);
+}
+
+
 /* Submenu Product */
 
 .sub-product {
     background-color: #456BF3;
-}
-
-.arrow-submenu{
-    position: absolute;
-    right: 100px;
 }
 
 .sub-menu-product{
@@ -451,22 +443,23 @@
     display: block;
 }
 
+.checkbox-toggle-submenu-product:checked~.a-submenu-product label {
+    color: black;
+}
+
+.checkbox-toggle-submenu-product:checked~.a-submenu-product span {
+    color: black;
+    transform: rotate(-180deg);
+}
+
 .sub-product {
     background-color: #F36F45;
 }
 
-.sub-order {
-    background-color: #F3456F;
-}
 
 /* Submenu Order */
 .sub-order {
-    background-color: #456BF3;
-}
-
-.arrow-submenu{
-    position: absolute;
-    right: 100px;
+    background-color: #F3456F;
 }
 
 .sub-menu-order{
@@ -479,6 +472,15 @@
 
 .checkbox-toggle-submenu-order:checked~.sub-menu-order{
     display: block;
+}
+
+.checkbox-toggle-submenu-order:checked~.a-submenu-order label {
+    color: black;
+}
+
+.checkbox-toggle-submenu-order:checked~.a-submenu-order span {
+    color: black;
+    transform: rotate(-180deg);
 }
 
 .sub-order {

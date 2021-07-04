@@ -80,15 +80,15 @@
                 <ul>
                     <li>
                         <input class="checkbox-toggle-submenu-store d-none" type="checkbox" name=""
-                            id="toggle-submenu-store">
-                        <a href="#" class="position-relative">
+                            id="toggle-submenu-store" checked>
+                        <a href="#" class="a-submenu-store position-relative">
                             <div class="sub-store rounded-circle">
-                                <img src="../img/user.png" alt="">
+                                <img src="../img/icon/home.svg" alt="">
                             </div>
-                            <label for="toggle-submenu-store" class="sub-menu-text menu-active">
+                            <label for="toggle-submenu-store" class="sub-menu-text">
                                 Store
                             </label>
-                            <span class="arrow-submenu-active fas fa-caret-down"></span>
+                            <span class="arrow-submenu fas fa-caret-down"></span>
                         </a>
                         <ul class="sub-menu-store">
                             <li><a class="submenu-active" href="">Store Profile</a></li>
@@ -98,9 +98,9 @@
                     <li>
                         <input class="checkbox-toggle-submenu-product d-none" type="checkbox" name=""
                             id="toggle-submenu-product">
-                        <a href="#" class="position-relative">
+                        <a href="#" class="a-submenu-product position-relative">
                             <div class="sub-product rounded-circle">
-                                <img src="../img/loc.png" alt="">
+                                <img src="../img/icon/product.svg" alt="">
                             </div>
                             <label for="toggle-submenu-product" class="sub-menu-text">
                                 Product
@@ -108,7 +108,7 @@
                             <span class="arrow-submenu fas fa-caret-down"></span>
                         </a>
                         <ul class="sub-menu-product">
-                            <li class="mb-2"><a href="">My Product</a></li>
+                            <li class="mb-2"><a href="./seller-myproduct.html">My Product</a></li>
                             <li><a href="">Selling Product</a></li>
                         </ul>
                     </li>
@@ -116,9 +116,9 @@
                     <li>
                         <input class="checkbox-toggle-submenu-order d-none" type="checkbox" name=""
                             id="toggle-submenu-order">
-                        <a href="#" class="position-relative">
+                        <a href="#" class="a-submenu-order position-relative">
                             <div class="sub-order rounded-circle">
-                                <img src="../img/loc.png" alt="">
+                                <img src="../img/icon/shopping-cart.svg" alt="">
                             </div>
                             <label for="toggle-submenu-order" class="sub-menu-text">
                                 order
@@ -127,7 +127,7 @@
                         </a>
                         <ul class="sub-menu-order">
                             <li class="mb-2"><a href="./seller-my-order.html">My order</a></li>
-                            <li><a href="">Selling order</a></li>
+                            <li><a href="./seller-order-cancel.html">Order cancel</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -137,7 +137,7 @@
             <div class="row text-center side-mobile">
                 <div class="col sub-store ms-3 rounded-3 mb-2">
                     <a href="#" id="store-submenu-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../img/user.png" alt="">
+                        <img src="../img/icon/home.svg" alt="">
                         <span style="font-size: x-small; color: white; margin: auto;">Store</span>
                     </a>
                     <ul class="dropdown-menu fs-6" aria-labelledby="store-submenu-dropdown">
@@ -146,8 +146,8 @@
                 </div>
                 <div class="col sub-product ms-3 rounded-3">
                     <a href="#" id="product-submenu-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../img/loc.png" alt="">
-                        <span style="font-size: x-small; color: white; margin: auto;">Store</span>
+                        <img src="../img/icon/product.svg" alt="">
+                        <span style="font-size: x-small; color: white; margin: auto;">Product</span>
                     </a>
                     <ul class="dropdown-menu fs-6" aria-labelledby="product-submenu-dropdown">
                         <li><a class="dropdown-item" href="#">My Product</a></li>
@@ -156,12 +156,12 @@
                 </div>
                 <div class="col sub-order ms-3 rounded-3">
                     <a href="#" id="order-submenu-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../img/clipboard.png" alt="" style="padding-left: -10px;">
+                        <img src="../img/icon/shopping-cart.svg" alt="" style="padding-left: -10px;">
                         <span style="font-size: x-small; color: white; margin: auto;">Order</span>
                     </a>
                     <ul class="dropdown-menu fs-6" aria-labelledby="order-submenu-dropdown">
-                        <li><a class="dropdown-item" href="#">My Order</a></li>
-                        <li><a class="dropdown-item" href="#">Order Cancel</a></li>
+                        <li><a class="dropdown-item" href="./seller-my-order.html">My Order</a></li>
+                        <li><a class="dropdown-item" href="./seller-order-cancel.html">Order Cancel</a></li>
                     </ul>
                 </div>
             </div>
